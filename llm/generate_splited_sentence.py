@@ -3,10 +3,10 @@ import re
 from openai import OpenAI
 from tqdm import tqdm
 
-API_KEY = "---"
+API_KEY = "SILICONFLOW_API_KEY"
 BASE_URL = "https://api.siliconflow.cn/v1"
-INPUT_FILE = "math500_qwen_ans_raw.jsonl"
-OUTPUT_FILE = "math500_nodes.jsonl"
+INPUT_FILE = "data/math500_qwen_ans_raw.jsonl"
+OUTPUT_FILE = "data/math500_llm_nodes.jsonl"
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 

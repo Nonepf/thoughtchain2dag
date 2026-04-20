@@ -1,0 +1,610 @@
+{"problem_id": 0, "step_index": 0, "content": "To convert the point \\((0,3)\\) from rectangular coordinates to polar coordinates, we need to find the values of \\(r\\) and \\(\\theta\\)."}
+{"problem_id": 0, "step_index": 1, "content": "The formulas for converting from rectangular coordinates \\((x, y)\\) to polar coordinates \\((r, \\theta)\\) are:"}
+{"problem_id": 0, "step_index": 2, "content": "\\[\nr = \\sqrt{x^2 + y^2}\n\\]"}
+{"problem_id": 0, "step_index": 3, "content": "\\[\n\\theta = \\tan^{-1}\\left(\\frac{y}{x}\\right)\n\\]"}
+{"problem_id": 0, "step_index": 4, "content": "Given the point \\((0, 3)\\), we have:"}
+{"problem_id": 0, "step_index": 5, "content": "\\[\nx = 0 \\quad \\text{and} \\quad y = 3\n\\]"}
+{"problem_id": 0, "step_index": 6, "content": "First, we calculate \\(r\\):"}
+{"problem_id": 0, "step_index": 7, "content": "\\[\nr = \\sqrt{0^2 + 3^2} = \\sqrt{0 + 9} = \\sqrt{9} = 3\n\\]"}
+{"problem_id": 0, "step_index": 8, "content": "Next, we calculate \\(\\theta\\). The formula \\(\\theta = \\tan^{-1}\\left(\\frac{y}{x}\\right)\\) becomes undefined when \\(x = 0\\)."}
+{"problem_id": 0, "step_index": 9, "content": "However, we can determine \\(\\theta\\) by considering the position of the point \\((0, 3)\\) on the coordinate plane."}
+{"problem_id": 0, "step_index": 10, "content": "The point \\((0, 3)\\) lies on the positive \\(y\\)-axis."}
+{"problem_id": 0, "step_index": 11, "content": "Therefore, the angle \\(\\theta\\) is:"}
+{"problem_id": 0, "step_index": 12, "content": "\\[\n\\theta = \\frac{\\pi}{2}\n\\]"}
+{"problem_id": 0, "step_index": 13, "content": "Thus, the polar coordinates of the point \\((0, 3)\\) are:"}
+{"problem_id": 0, "step_index": 14, "content": "\\[\n(r, \\theta) = \\left(3, \\frac{\\pi}{2}\\right)\n\\]"}
+{"problem_id": 0, "step_index": 15, "content": "The final answer is:"}
+{"problem_id": 0, "step_index": 16, "content": "\\[\n\\boxed{\\left(3, \\frac{\\pi}{2}\\right)}\n\\]"}
+{"problem_id": 1, "step_index": 0, "content": "To find a way to write the double sum \\(\\sum_{j=1}^\\infty \\sum_{k=1}^\\infty \\frac{1}{(j+k)^3}\\) in terms of \\(p\\) and \\(q\\), we start by considering the sum in a different form."}
+{"problem_id": 1, "step_index": 1, "content": "We can rewrite the double sum by changing the order of summation. Instead of summing over \\(j\\) and \\(k\\), we sum over \\(n = j+k\\) and then over all possible pairs \\((j, k)\\) such that \\(j+k = n\\)."}
+{"problem_id": 1, "step_index": 2, "content": "The sum \\(\\sum_{j=1}^\\infty \\sum_{k=1}^\\infty \\frac{1}{(j+k)^3}\\) can be rewritten as: \\(\\sum_{n=2}^\\infty \\sum_{j=1}^{n-1} \\frac{1}{n^3}\\)."}
+{"problem_id": 1, "step_index": 3, "content": "Here, the inner sum \\(\\sum_{j=1}^{n-1} \\frac{1}{n^3}\\) is simply \\(\\frac{n-1}{n^3}\\) because there are \\(n-1\\) terms in the sum, each equal to \\(\\frac{1}{n^3}\\)."}
+{"problem_id": 1, "step_index": 4, "content": "Therefore, the double sum becomes: \\(\\sum_{n=2}^\\infty \\frac{n-1}{n^3} = \\sum_{n=2}^\\infty \\left( \\frac{1}{n^2} - \\frac{1}{n^3} \\right)\\)."}
+{"problem_id": 1, "step_index": 5, "content": "We can split this into two separate sums: \\(\\sum_{n=2}^\\infty \\frac{1}{n^2} - \\sum_{n=2}^\\infty \\frac{1}{n^3}\\)."}
+{"problem_id": 1, "step_index": 6, "content": "The first sum \\(\\sum_{n=2}^\\infty \\frac{1}{n^2}\\) is the sum of the series \\(\\sum_{n=1}^\\infty \\frac{1}{n^2}\\) minus the first term \\(\\frac{1}{1^2}\\): \\(\\sum_{n=2}^\\infty \\frac{1}{n^2} = p - 1\\)."}
+{"problem_id": 1, "step_index": 7, "content": "The second sum \\(\\sum_{n=2}^\\infty \\frac{1}{n^3}\\) is the sum of the series \\(\\sum_{n=1}^\\infty \\frac{1}{n^3}\\) minus the first term \\(\\frac{1}{1^3}\\): \\(\\sum_{n=2}^\\infty \\frac{1}{n^3} = q - 1\\)."}
+{"problem_id": 1, "step_index": 8, "content": "So, the original double sum can be expressed as: \\((p - 1) - (q - 1) = p - q\\)."}
+{"problem_id": 2, "step_index": 0, "content": "To find the value of \\( f(-2) + f(-1) + f(0) \\) for the function \\( f(x) = \\frac{3x-2}{x-2} \\), we need to evaluate \\( f(x) \\) at each of these points and then sum the results."}
+{"problem_id": 2, "step_index": 1, "content": "First, let's evaluate \\( f(-2) \\):"}
+{"problem_id": 2, "step_index": 2, "content": "\\[\nf(-2) = \\frac{3(-2) - 2}{-2 - 2} = \\frac{-6 - 2}{-4} = \\frac{-8}{-4} = 2\n\\]"}
+{"problem_id": 2, "step_index": 3, "content": "Next, let's evaluate \\( f(-1) \\):"}
+{"problem_id": 2, "step_index": 4, "content": "\\[\nf(-1) = \\frac{3(-1) - 2}{-1 - 2} = \\frac{-3 - 2}{-3} = \\frac{-5}{-3} = \\frac{5}{3}\n\\]"}
+{"problem_id": 2, "step_index": 5, "content": "Then, let's evaluate \\( f(0) \\):"}
+{"problem_id": 2, "step_index": 6, "content": "\\[\nf(0) = \\frac{3(0) - 2}{0 - 2} = \\frac{-2}{-2} = 1\n\\]"}
+{"problem_id": 2, "step_index": 7, "content": "Now, we sum the values of \\( f(-2) \\), \\( f(-1) \\), and \\( f(0) \\):"}
+{"problem_id": 2, "step_index": 8, "content": "\\[\nf(-2) + f(-1) + f(0) = 2 + \\frac{5}{3} + 1\n\\]"}
+{"problem_id": 2, "step_index": 9, "content": "To add these numbers, we need a common denominator. The common denominator for 2, \\(\\frac{5}{3}\\), and 1 is 3. We convert 2 and 1 to fractions with a denominator of 3:"}
+{"problem_id": 2, "step_index": 10, "content": "\\[\n2 = \\frac{6}{3} \\quad \\text{and} \\quad 1 = \\frac{3}{3}\n\\]"}
+{"problem_id": 2, "step_index": 11, "content": "Now we can add the fractions:"}
+{"problem_id": 2, "step_index": 12, "content": "\\[\n\\frac{6}{3} + \\frac{5}{3} + \\frac{3}{3} = \\frac{6 + 5 + 3}{3} = \\frac{14}{3}\n\\]"}
+{"problem_id": 2, "step_index": 13, "content": "Therefore, the value of \\( f(-2) + f(-1) + f(0) \\) is \\(\\boxed{\\frac{14}{3}}\\)."}
+{"problem_id": 3, "step_index": 0, "content": "To determine the number of positive whole-number divisors of 196, we start by finding its prime factorization."}
+{"problem_id": 3, "step_index": 1, "content": "First, we check if 196 is divisible by the smallest prime number, which is 2: 196 ÷ 2 = 98."}
+{"problem_id": 3, "step_index": 2, "content": "So, 196 can be written as: 196 = 2 × 98."}
+{"problem_id": 3, "step_index": 3, "content": "Next, we check if 98 is divisible by 2: 98 ÷ 2 = 49."}
+{"problem_id": 3, "step_index": 4, "content": "So, 98 can be written as: 98 = 2 × 49."}
+{"problem_id": 3, "step_index": 5, "content": "Now, we have: 196 = 2 × 2 × 49 = 2^2 × 49."}
+{"problem_id": 3, "step_index": 6, "content": "Next, we check if 49 is divisible by the next smallest prime number, which is 3. Since 49 is not divisible by 3 (the sum of the digits of 49 is 4 + 9 = 13, and 13 is not divisible by 3), we check the next prime number, which is 5."}
+{"problem_id": 3, "step_index": 7, "content": "Since 49 is not divisible by 5 (it does not end in 0 or 5), we check the next prime number, which is 7: 49 ÷ 7 = 7."}
+{"problem_id": 3, "step_index": 8, "content": "So, 49 can be written as: 49 = 7 × 7."}
+{"problem_id": 3, "step_index": 9, "content": "Now, we have: 196 = 2^2 × 7 × 7 = 2^2 × 7^2."}
+{"problem_id": 3, "step_index": 10, "content": "The prime factorization of 196 is 2^2 × 7^2. To find the number of positive divisors, we use the formula for the number of divisors based on the prime factorization."}
+{"problem_id": 3, "step_index": 11, "content": "If a number \\(n\\) has a prime factorization of \\(p_1^{e_1} \\times p_2^{e_2} \\times \\cdots \\times p_k^{e_k}\\), then the number of positive divisors of \\(n\\) is given by: (e_1 + 1)(e_2 + 1) ... (e_k + 1)."}
+{"problem_id": 3, "step_index": 12, "content": "For the number 196, the exponents in the prime factorization are 2 and 2."}
+{"problem_id": 3, "step_index": 13, "content": "Therefore, the number of positive divisors of 196 is: (2 + 1)(2 + 1) = 3 × 3 = 9."}
+{"problem_id": 4, "step_index": 0, "content": "To determine which student has the greatest average speed, we need to calculate the average speed for each student."}
+{"problem_id": 4, "step_index": 1, "content": "The average speed is given by the formula: \\(\\text{Average speed} = \\frac{\\text{Distance}}{\\text{Time}}\\)."}
+{"problem_id": 4, "step_index": 2, "content": "We will analyze the graph to find the distance and time for each student."}
+{"problem_id": 4, "step_index": 3, "content": "For Evelyn, the distance is 4.5 units and the time is 1.25 units."}
+{"problem_id": 4, "step_index": 4, "content": "So, Evelyn's average speed is calculated as: \\(\\frac{4.5}{1.25} = 3.6 \\text{ units per unit time}\\)."}
+{"problem_id": 4, "step_index": 5, "content": "For Briana, the distance is 2.2 units and the time is 2.5 units."}
+{"problem_id": 4, "step_index": 6, "content": "So, Briana's average speed is calculated as: \\(\\frac{2.2}{2.5} = 0.88 \\text{ units per unit time}\\)."}
+{"problem_id": 4, "step_index": 7, "content": "For Carla, the distance is 5.2 units and the time is 4.25 units."}
+{"problem_id": 4, "step_index": 8, "content": "So, Carla's average speed is calculated as: \\(\\frac{5.2}{4.25} \\approx 1.2235 \\text{ units per unit time}\\)."}
+{"problem_id": 4, "step_index": 9, "content": "For Debra, the distance is 2.8 units and the time is 5.6 units."}
+{"problem_id": 4, "step_index": 10, "content": "So, Debra's average speed is calculated as: \\(\\frac{2.8}{5.6} = 0.5 \\text{ units per unit time}\\)."}
+{"problem_id": 4, "step_index": 11, "content": "For Angela, the distance is 1.4 units and the time is 6.8 units."}
+{"problem_id": 4, "step_index": 12, "content": "So, Angela's average speed is calculated as: \\(\\frac{1.4}{6.8} \\approx 0.2059 \\text{ units per unit time}\\)."}
+{"problem_id": 4, "step_index": 13, "content": "Now, we compare the average speeds:"}
+{"problem_id": 4, "step_index": 14, "content": "Evelyn: 3.6 units per unit time"}
+{"problem_id": 4, "step_index": 15, "content": "Briana: 0.88 units per unit time"}
+{"problem_id": 4, "step_index": 16, "content": "Carla: 1.2235 units per unit time"}
+{"problem_id": 4, "step_index": 17, "content": "Debra: 0.5 units per unit time"}
+{"problem_id": 4, "step_index": 18, "content": "Angela: 0.2059 units per unit time"}
+{"problem_id": 4, "step_index": 19, "content": "The greatest average speed is 3.6 units per unit time, which belongs to Evelyn."}
+{"problem_id": 4, "step_index": 20, "content": "Thus, the student with the greatest average speed is \\(\\boxed{Evelyn}\\)."}
+{"problem_id": 5, "step_index": 0, "content": "To determine the perimeter of the regular hexagon, we start by analyzing the given information about the equilateral triangles."}
+{"problem_id": 5, "step_index": 1, "content": "The perimeter of one equilateral triangle is given as 21 inches. Since an equilateral triangle has three equal sides, we can find the length of each side by dividing the perimeter by 3:  \\text{Side length of the triangle} = \\frac{21 \\text{ inches}}{3} = 7 \\text{ inches}"}
+{"problem_id": 5, "step_index": 2, "content": "A regular hexagon can be divided into six equilateral triangles, and each side of the hexagon corresponds to one side of these triangles. Therefore, the side length of the hexagon is the same as the side length of each equilateral triangle, which is 7 inches."}
+{"problem_id": 5, "step_index": 3, "content": "A regular hexagon has six sides, and since each side is 7 inches, the perimeter of the hexagon is:  \\text{Perimeter of the hexagon} = 6 \\times 7 \\text{ inches} = 42 \\text{ inches}"}
+{"problem_id": 5, "step_index": 4, "content": "Thus, the perimeter of the regular hexagon is \\(\\boxed{42}\\) inches."}
+{"problem_id": 6, "step_index": 0, "content": "To find the smallest positive perfect cube that can be written as the sum of three consecutive integers, let's denote the three consecutive integers as \\(n-1\\), \\(n\\), and \\(n+1\\)."}
+{"problem_id": 6, "step_index": 1, "content": "The sum of these three integers is: \\((n-1) + n + (n+1) = 3n\\)."}
+{"problem_id": 6, "step_index": 2, "content": "We need this sum to be a perfect cube, so we need \\(3n = k^3\\) for some integer \\(k\\)."}
+{"problem_id": 6, "step_index": 3, "content": "This means that \\(k^3\\) must be divisible by 3, and hence \\(k\\) must be divisible by 3."}
+{"problem_id": 6, "step_index": 4, "content": "Let's write \\(k\\) as \\(3m\\), where \\(m\\) is an integer."}
+{"problem_id": 6, "step_index": 5, "content": "Then: \\(k^3 = (3m)^3 = 27m^3\\)."}
+{"problem_id": 6, "step_index": 6, "content": "So, \\(3n = 27m^3\\), which simplifies to \\(n = 9m^3\\)."}
+{"problem_id": 6, "step_index": 7, "content": "The smallest positive value for \\(m\\) is 1."}
+{"problem_id": 6, "step_index": 8, "content": "So, \\(n = 9 \\cdot 1^3 = 9\\)."}
+{"problem_id": 6, "step_index": 9, "content": "Then the three consecutive integers are \\(8\\), \\(9\\), and \\(10\\)."}
+{"problem_id": 6, "step_index": 10, "content": "And their sum is: \\(8 + 9 + 10 = 27\\)."}
+{"problem_id": 6, "step_index": 11, "content": "Since \\(27 = 3^3\\), it is a perfect cube."}
+{"problem_id": 6, "step_index": 12, "content": "Therefore, the smallest positive perfect cube that can be written as the sum of three consecutive integers is \\(\\boxed{27}\\)."}
+{"problem_id": 7, "step_index": 0, "content": "To find the angle between the two lines given by the equations \\(2x = 3y = -z\\) and \\(6x = -y = -4z\\), we first need to determine the direction vectors of these lines."}
+{"problem_id": 7, "step_index": 1, "content": "For the line \\(2x = 3y = -z\\), we can express \\(x\\), \\(y\\), and \\(z\\) in terms of a parameter \\(t\\). Let \\(2x = 3y = -z = t\\). Then we have:\n\\[x = \\frac{t}{2}, \\quad y = \\frac{t}{3}, \\quad z = -t.\\]"}
+{"problem_id": 7, "step_index": 2, "content": "This gives us the direction vector \\(\\mathbf{v_1} = \\left(\\frac{1}{2}, \\frac{1}{3}, -1\\right)\\)."}
+{"problem_id": 7, "step_index": 3, "content": "For the line \\(6x = -y = -4z\\), we can express \\(x\\), \\(y\\), and \\(z\\) in terms of a parameter \\(s\\). Let \\(6x = -y = -4z = s\\). Then we have:\n\\[x = \\frac{s}{6}, \\quad y = -s, \\quad z = -\\frac{s}{4}.\\]"}
+{"problem_id": 7, "step_index": 4, "content": "This gives us the direction vector \\(\\mathbf{v_2} = \\left(\\frac{1}{6}, -1, -\\frac{1}{4}\\right)\\)."}
+{"problem_id": 7, "step_index": 5, "content": "The angle \\(\\theta\\) between two vectors \\(\\mathbf{v_1}\\) and \\(\\mathbf{v_2}\\) is given by the formula:\n\\[\\cos \\theta = \\frac{\\mathbf{v_1} \\cdot \\mathbf{v_2}}{\\|\\mathbf{v_1}\\| \\|\\mathbf{v_2}\\|}.\\]"}
+{"problem_id": 7, "step_index": 6, "content": "First, we calculate the dot product \\(\\mathbf{v_1} \\cdot \\mathbf{v_2}\\):\n\\[\\mathbf{v_1} \\cdot \\mathbf{v_2} = \\left(\\frac{1}{2}\\right)\\left(\\frac{1}{6}\\right) + \\left(\\frac{1}{3}\\right)(-1) + (-1)\\left(-\\frac{1}{4}\\right) = \\frac{1}{12} - \\frac{1}{3} + \\frac{1}{4}.\\]"}
+{"problem_id": 7, "step_index": 7, "content": "To add these fractions, we need a common denominator:\n\\[\\frac{1}{12} - \\frac{1}{3} + \\frac{1}{4} = \\frac{1}{12} - \\frac{4}{12} + \\frac{3}{12} = \\frac{1 - 4 + 3}{12} = \\frac{0}{12} = 0.\\]"}
+{"problem_id": 7, "step_index": 8, "content": "Next, we calculate the magnitudes of \\(\\mathbf{v_1}\\) and \\(\\mathbf{v_2}\\):\n\\[\\|\\mathbf{v_1}\\| = \\sqrt{\\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{3}\\right)^2 + (-1)^2} = \\sqrt{\\frac{1}{4} + \\frac{1}{9} + 1} = \\sqrt{\\frac{9 + 4 + 36}{36}} = \\sqrt{\\frac{49}{36}} = \\frac{7}{6}.\\]"}
+{"problem_id": 7, "step_index": 9, "content": "\\[\\|\\mathbf{v_2}\\| = \\sqrt{\\left(\\frac{1}{6}\\right)^2 + (-1)^2 + \\left(-\\frac{1}{4}\\right)^2} = \\sqrt{\\frac{1}{36} + 1 + \\frac{1}{16}} = \\sqrt{\\frac{4 + 144 + 9}{144}} = \\sqrt{\\frac{157}{144}} = \\frac{\\sqrt{157}}{12}.\\]"}
+{"problem_id": 7, "step_index": 10, "content": "Therefore, the cosine of the angle \\(\\theta\\) is:\n\\[\\cos \\theta = \\frac{\\mathbf{v_1} \\cdot \\mathbf{v_2}}{\\|\\mathbf{v_1}\\| \\|\\mathbf{v_2}\\|} = \\frac{0}{\\frac{7}{6} \\times \\frac{\\sqrt{157}}{12}} = 0.\\]"}
+{"problem_id": 7, "step_index": 11, "content": "Since \\(\\cos \\theta = 0\\), the angle \\(\\theta\\) between the two vectors is:\n\\[\\theta = \\cos^{-1}(0) = 90^\\circ.\\]"}
+{"problem_id": 8, "step_index": 0, "content": "To find the distance between the points \\((2, -6)\\) and \\((-4, 3)\\), we use the distance formula."}
+{"problem_id": 8, "step_index": 1, "content": "The distance formula for two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a coordinate plane is given by: \\[d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\]"}
+{"problem_id": 8, "step_index": 2, "content": "Here, the coordinates of the first point are \\((x_1, y_1) = (2, -6)\\) and the coordinates of the second point are \\((x_2, y_2) = (-4, 3)\\)."}
+{"problem_id": 8, "step_index": 3, "content": "Substituting these values into the distance formula, we get: \\[d = \\sqrt{((-4) - 2)^2 + (3 - (-6))^2}\\]"}
+{"problem_id": 8, "step_index": 4, "content": "Simplifying the expressions inside the parentheses, we have: \\[d = \\sqrt{(-6)^2 + (3 + 6)^2} = \\sqrt{(-6)^2 + 9^2}\\]"}
+{"problem_id": 8, "step_index": 5, "content": "Next, we calculate the squares of \\(-6\\) and \\(9\\): \\[d = \\sqrt{36 + 81} = \\sqrt{117}\\]"}
+{"problem_id": 8, "step_index": 6, "content": "To express \\(\\sqrt{117}\\) in simplest radical form, we factorize 117 into its prime factors: \\[117 = 9 \\times 13\\]"}
+{"problem_id": 8, "step_index": 7, "content": "Since \\(9\\) is a perfect square, we can take its square root out of the square root: \\[\\sqrt{117} = \\sqrt{9 \\times 13} = \\sqrt{9} \\times \\sqrt{13} = 3\\sqrt{13}\\]"}
+{"problem_id": 8, "step_index": 8, "content": "Therefore, the distance between the points \\((2, -6)\\) and \\((-4, 3)\\) is: \\[\\boxed{3\\sqrt{13}}\\]"}
+{"problem_id": 9, "step_index": 0, "content": "To determine the number of distinct values that can be obtained from the expression \\(2 \\cdot 3 \\cdot 4 \\cdot 5 + 1\\) by inserting parentheses, we need to consider all possible ways to group the terms using parentheses."}
+{"problem_id": 9, "step_index": 1, "content": "Let's break down the expression step by step."}
+{"problem_id": 9, "step_index": 2, "content": "First, let's list all possible ways to insert parentheses:"}
+{"problem_id": 9, "step_index": 3, "content": "\\((2 \\cdot 3 \\cdot 4 \\cdot 5) + 1\\)"}
+{"problem_id": 9, "step_index": 4, "content": "\\(2 \\cdot (3 \\cdot 4 \\cdot 5 + 1)\\)"}
+{"problem_id": 9, "step_index": 5, "content": "\\(2 \\cdot (3 \\cdot (4 \\cdot 5 + 1))\\)"}
+{"problem_id": 9, "step_index": 6, "content": "\\(2 \\cdot ((3 \\cdot 4) \\cdot (5 + 1))\\)"}
+{"problem_id": 9, "step_index": 7, "content": "\\(2 \\cdot ((3 \\cdot 4) \\cdot 5 + 1)\\)"}
+{"problem_id": 9, "step_index": 8, "content": "\\(2 \\cdot (3 \\cdot (4 \\cdot 5)) + 1\\)"}
+{"problem_id": 9, "step_index": 9, "content": "\\(2 \\cdot ((3 \\cdot 4) \\cdot 5)\\)"}
+{"problem_id": 9, "step_index": 10, "content": "\\(2 \\cdot (3 \\cdot (4 \\cdot 5))\\)"}
+{"problem_id": 9, "step_index": 11, "content": "\\(2 \\cdot (3 \\cdot 4 \\cdot 5)\\)"}
+{"problem_id": 9, "step_index": 12, "content": "\\(2 \\cdot 3 \\cdot ((4 \\cdot 5) + 1)\\)"}
+{"problem_id": 9, "step_index": 13, "content": "\\(2 \\cdot 3 \\cdot (4 \\cdot (5 + 1))\\)"}
+{"problem_id": 9, "step_index": 14, "content": "\\(2 \\cdot 3 \\cdot (4 \\cdot 5)\\)"}
+{"problem_id": 9, "step_index": 15, "content": "\\(2 \\cdot (3 \\cdot 4) \\cdot (5 + 1)\\)"}
+{"problem_id": 9, "step_index": 16, "content": "\\(2 \\cdot (3 \\cdot 4 \\cdot (5 + 1))\\)"}
+{"problem_id": 9, "step_index": 17, "content": "\\(2 \\cdot (3 \\cdot (4 \\cdot (5 + 1)))\\)"}
+{"problem_id": 9, "step_index": 18, "content": "\\(2 \\cdot (3 \\cdot 4 \\cdot 5 + 1)\\)"}
+{"problem_id": 9, "step_index": 19, "content": "\\(2 \\cdot ((3 \\cdot 4) \\cdot 5 + 1)\\)"}
+{"problem_id": 9, "step_index": 20, "content": "\\(2 \\cdot (3 \\cdot (4 \\cdot 5 + 1))\\)"}
+{"problem_id": 9, "step_index": 21, "content": "\\(2 \\cdot ((3 \\cdot 4 \\cdot 5) + 1)\\)"}
+{"problem_id": 9, "step_index": 22, "content": "\\(2 \\cdot (3 \\cdot 4) \\cdot 5 + 1\\)"}
+{"problem_id": 10, "step_index": 0, "content": "To find the least positive integer multiple of 30 that can be written with only the digits 0 and 2, we need to consider the properties of numbers that are multiples of 30. A number is a multiple of 30 if and only if it is a multiple of both 3 and 10."}
+{"problem_id": 10, "step_index": 1, "content": "First, let's consider the condition for a number to be a multiple of 10. A number is a multiple of 10 if its last digit is 0. Therefore, the last digit of our number must be 0."}
+{"problem_id": 10, "step_index": 2, "content": "Next, let's consider the condition for a number to be a multiple of 3. A number is a multiple of 3 if the sum of its digits is a multiple of 3. Since our number can only contain the digits 0 and 2, the sum of its digits will be a multiple of 2 (because each digit is either 0 or 2)."}
+{"problem_id": 10, "step_index": 3, "content": "We need to find the smallest number of 2's such that their sum is a multiple of 3. The smallest such number is 3, because \\(2 + 2 + 2 = 6\\), and 6 is a multiple of 3."}
+{"problem_id": 10, "step_index": 4, "content": "Therefore, the smallest number that meets both conditions is 2220. We can verify this:\n- It ends in 0, so it is a multiple of 10.\n- The sum of its digits is \\(2 + 2 + 2 + 0 = 6\\), and 6 is a multiple of 3."}
+{"problem_id": 10, "step_index": 5, "content": "Thus, the least positive integer multiple of 30 that can be written with only the digits 0 and 2 is \\(\\boxed{2220}\\)."}
+{"problem_id": 11, "step_index": 0, "content": "Given the polynomial \\( p(x) \\) of degree 5 such that \\( p(n) = \\frac{n}{n^2 - 1} \\) for \\( n = 2, 3, 4, \\dots, 7 \\), we can define a new polynomial \\( q(x) = (x^2 - 1)p(x) - x \\)."}
+{"problem_id": 11, "step_index": 1, "content": "This polynomial \\( q(x) \\) is of degree 7 because the term \\( (x^2 - 1)p(x) \\) is a polynomial of degree 7 and subtracting \\( x \\) does not change the degree."}
+{"problem_id": 11, "step_index": 2, "content": "We know that \\( q(n) = 0 \\) for \\( n = 2, 3, 4, 5, 6, 7 \\), so \\( q(x) \\) can be written as:\n\\[ q(x) = c(x-2)(x-3)(x-4)(x-5)(x-6)(x-7) \\]\nfor some constant \\( c \\)."}
+{"problem_id": 11, "step_index": 3, "content": "To find \\( c \\), we can use the fact that \\( q(x) = (x^2 - 1)p(x) - x \\)."}
+{"problem_id": 11, "step_index": 4, "content": "We need to determine \\( q(x) \\) at a point where \\( p(x) \\) is not defined, such as \\( x = 1 \\) or \\( x = -1 \\)."}
+{"problem_id": 11, "step_index": 5, "content": "However, a simpler approach is to consider the behavior of \\( q(x) \\) as \\( x \\to \\infty \\)."}
+{"problem_id": 11, "step_index": 6, "content": "As \\( x \\to \\infty \\), \\( p(x) \\approx \\frac{x}{x^2} = \\frac{1}{x} \\)."}
+{"problem_id": 11, "step_index": 7, "content": "So, \\( q(x) \\approx (x^2 - 1) \\cdot \\frac{1}{x} - x = x - \\frac{1}{x} - x = -\\frac{1}{x} \\)."}
+{"problem_id": 11, "step_index": 8, "content": "On the other hand, as \\( x \\to \\infty \\), \\( c(x-2)(x-3)(x-4)(x-5)(x-6)(x-7) \\approx c x^6 \\)."}
+{"problem_id": 11, "step_index": 9, "content": "For these two expressions to be consistent as \\( x \\to \\infty \\), we must have:\n\\[ c x^6 \\approx -\\frac{1}{x} \\]"}
+{"problem_id": 11, "step_index": 10, "content": "This implies \\( c = 0 \\), but this is not possible since \\( q(x) \\) is a polynomial of degree 7."}
+{"problem_id": 12, "step_index": 0, "content": "To find the sum of the proper divisors of the sum of the proper divisors of 284, we need to follow these steps."}
+{"problem_id": 12, "step_index": 1, "content": "First, we find all the divisors of 284. We start by checking for small prime factors."}
+{"problem_id": 12, "step_index": 2, "content": "Since 284 is even, it is divisible by 2."}
+{"problem_id": 12, "step_index": 3, "content": "284 divided by 2 equals 142."}
+{"problem_id": 12, "step_index": 4, "content": "So, 2 and 142 are divisors."}
+{"problem_id": 12, "step_index": 5, "content": "Since 142 is even, it is divisible by 2 again."}
+{"problem_id": 12, "step_index": 6, "content": "142 divided by 2 equals 71."}
+{"problem_id": 12, "step_index": 7, "content": "So, 4 and 71 are divisors."}
+{"problem_id": 12, "step_index": 8, "content": "We check if 71 is a prime number. It is not divisible by 2, 3, 5, or 7."}
+{"problem_id": 12, "step_index": 9, "content": "Therefore, 71 is a prime number."}
+{"problem_id": 12, "step_index": 10, "content": "Thus, the divisors of 284 are: 1, 2, 4, 71, 142, 284."}
+{"problem_id": 12, "step_index": 11, "content": "The proper divisors of 284 (excluding 284 itself) are: 1, 2, 4, 71, 142."}
+{"problem_id": 12, "step_index": 12, "content": "We sum the proper divisors of 284."}
+{"problem_id": 12, "step_index": 13, "content": "1 + 2 + 4 + 71 + 142 equals 220."}
+{"problem_id": 12, "step_index": 14, "content": "Next, we find all the divisors of 220. We start by checking for small prime factors."}
+{"problem_id": 12, "step_index": 15, "content": "Since 220 is even, it is divisible by 2."}
+{"problem_id": 13, "step_index": 0, "content": "To find the height of the cylinder, we start with the formula for the volume of a cylinder, which is given by: V = π r^2 h, where V is the volume, r is the radius, and h is the height."}
+{"problem_id": 13, "step_index": 1, "content": "We are given that the volume V is 45π cubic cm and the radius r is 3 cm. We need to find the height h."}
+{"problem_id": 13, "step_index": 2, "content": "First, substitute the given values into the volume formula: 45π = π (3)^2 h."}
+{"problem_id": 13, "step_index": 3, "content": "Next, simplify the right side of the equation. The radius squared is 3^2 = 9, so the equation becomes: 45π = π · 9 · h."}
+{"problem_id": 13, "step_index": 4, "content": "We can cancel the π from both sides of the equation: 45 = 9h."}
+{"problem_id": 13, "step_index": 5, "content": "Now, solve for h by dividing both sides by 9: h = 45/9 = 5."}
+{"problem_id": 13, "step_index": 6, "content": "Therefore, the height of the cylinder is 5 cm."}
+{"problem_id": 14, "step_index": 0, "content": "To find the length of \\(DE\\) in the given right triangle \\(DEF\\), we start by identifying the given information and the relationships between the sides and angles."}
+{"problem_id": 14, "step_index": 1, "content": "We know:\n- \\(\\sin D = 0.7\\)\n- \\(EF = 7\\)"}
+{"problem_id": 14, "step_index": 2, "content": "Since \\(\\sin D = 0.7\\), we can use the definition of sine in a right triangle:\n\\[\n\\sin D = \\frac{\\text{opposite}}{\\text{hypotenuse}}\n\\]"}
+{"problem_id": 14, "step_index": 3, "content": "In triangle \\(DEF\\), the side opposite angle \\(D\\) is \\(EF\\) and the hypotenuse is \\(DF\\). Therefore, we have:\n\\[\n\\sin D = \\frac{EF}{DF} = \\frac{7}{DF}\n\\]"}
+{"problem_id": 14, "step_index": 4, "content": "Given that \\(\\sin D = 0.7\\), we can set up the equation:\n\\[\n0.7 = \\frac{7}{DF}\n\\]"}
+{"problem_id": 14, "step_index": 5, "content": "To solve for \\(DF\\), we multiply both sides of the equation by \\(DF\\):\n\\[\n0.7 \\cdot DF = 7\n\\]"}
+{"problem_id": 14, "step_index": 6, "content": "Next, we divide both sides by 0.7:\n\\[\nDF = \\frac{7}{0.7} = 10\n\\]"}
+{"problem_id": 14, "step_index": 7, "content": "Now that we have the length of the hypotenuse \\(DF\\), we need to find the length of \\(DE\\). Since \\(DEF\\) is a right triangle, we can use the Pythagorean theorem:\n\\[\nDF^2 = DE^2 + EF^2\n\\]"}
+{"problem_id": 14, "step_index": 8, "content": "Substituting the known values \\(DF = 10\\) and \\(EF = 7\\):\n\\[\n10^2 = DE^2 + 7^2\n\\]"}
+{"problem_id": 14, "step_index": 9, "content": "Simplify the equation:\n\\[\n100 = DE^2 + 49\n\\]"}
+{"problem_id": 14, "step_index": 10, "content": "Subtract 49 from both sides to solve for \\(DE^2\\):\n\\[\nDE^2 = 100 - 49 = 51\n\\]"}
+{"problem_id": 14, "step_index": 11, "content": "Finally, take the square root of both sides to find \\(DE\\):\n\\[\nDE = \\sqrt{51}\n\\]"}
+{"problem_id": 14, "step_index": 12, "content": "Thus, the length of \\(DE\\) is:\n\\[\n\\boxed{\\sqrt{51}}\n\\]"}
+{"problem_id": 15, "step_index": 0, "content": "To find the result of rotating the complex number \\( z = 2 + \\sqrt{2} - (3 + 3\\sqrt{2})i \\) around the complex number \\( c = 2 - 3i \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise, we can follow these steps:"}
+{"problem_id": 15, "step_index": 1, "content": "Translate \\( z \\) so that \\( c \\) is at the origin: \\( z' = z - c = (2 + \\sqrt{2} - (3 + 3\\sqrt{2})i) - (2 - 3i) = \\sqrt{2} - 3\\sqrt{2}i \\)."}
+{"problem_id": 15, "step_index": 2, "content": "Rotate \\( z' \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise: Rotating a complex number by \\( \\frac{\\pi}{4} \\) counter-clockwise is equivalent to multiplying it by \\( e^{i\\pi/4} = \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2}i \\). Therefore, we have: \\( z'' = z' \\cdot e^{i\\pi/4} = (\\sqrt{2} - 3\\sqrt{2}i) \\left( \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2}i \\right) \\)."}
+{"problem_id": 15, "step_index": 3, "content": "We can expand this product using the distributive property: \\( z'' = \\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2} + \\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2}i - 3\\sqrt{2}i \\cdot \\frac{\\sqrt{2}}{2} - 3\\sqrt{2}i \\cdot \\frac{\\sqrt{2}}{2}i \\)."}
+{"problem_id": 15, "step_index": 4, "content": "Simplifying each term, we get: \\( z'' = 1 + i - 3i + 3 = 4 - 2i \\)."}
+{"problem_id": 15, "step_index": 5, "content": "Translate \\( z'' \\) back to the original coordinate system: \\( w = z'' + c = (4 - 2i) + (2 - 3i) = 6 - 5i \\)."}
+{"problem_id": 15, "step_index": 6, "content": "Therefore, the result of rotating \\( z \\) around \\( c \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise is \\( 6 - 5i \\)."}
+{"problem_id": 16, "step_index": 0, "content": "To compute the sum \\(1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100\\), we can group the terms in pairs."}
+{"problem_id": 16, "step_index": 1, "content": "Notice that each pair consists of a positive term followed by a negative term. Specifically, the pairs are: \\((1 - 2), (3 - 4), (5 - 6), \\dots, (99 - 100)\\)."}
+{"problem_id": 16, "step_index": 2, "content": "Each pair simplifies to \\(-1\\)."}
+{"problem_id": 16, "step_index": 3, "content": "To determine how many such pairs there are, we observe that there are 100 terms in total."}
+{"problem_id": 16, "step_index": 4, "content": "Since each pair consists of 2 terms, the number of pairs is: \\(\\frac{100}{2} = 50\\)."}
+{"problem_id": 16, "step_index": 5, "content": "Since each pair sums to \\(-1\\), the total sum of all the pairs is: \\(50 \\times (-1) = -50\\)."}
+{"problem_id": 16, "step_index": 6, "content": "Therefore, the value of the sum \\(1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100\\) is: \\(\\boxed{-50}\\)."}
+{"problem_id": 17, "step_index": 0, "content": "To determine the smallest possible value of \\( c \\) for the function \\( y = a \\sin (bx + c) + d \\), we need to analyze the given graph and identify the key characteristics of the sine function, such as its amplitude, period, vertical shift, and phase shift."}
+{"problem_id": 17, "step_index": 1, "content": "The amplitude of the sine function is the maximum deviation from the midline (average value) to the maximum or minimum value. From the graph, we observe that the maximum value is 3 and the minimum value is -1."}
+{"problem_id": 17, "step_index": 2, "content": "The midline is the average of these two values:\n   \\[\n   \\text{Midline} = \\frac{3 + (-1)}{2} = 1\n   \\]"}
+{"problem_id": 17, "step_index": 3, "content": "Therefore, the amplitude \\( a \\) is:\n   \\[\n   a = 3 - 1 = 2\n   \\]"}
+{"problem_id": 17, "step_index": 4, "content": "The period of the sine function is the distance along the x-axis for the function to complete one full cycle. From the graph, we observe that the function completes one full cycle over an interval of \\( \\frac{2\\pi}{3} \\)."}
+{"problem_id": 17, "step_index": 5, "content": "Therefore, the period \\( \\frac{2\\pi}{b} \\) is:\n   \\[\n   \\frac{2\\pi}{b} = \\frac{2\\pi}{3} \\implies b = 3\n   \\]"}
+{"problem_id": 17, "step_index": 6, "content": "The vertical shift is the midline of the function, which we have already determined to be 1. Therefore, \\( d = 1 \\)."}
+{"problem_id": 17, "step_index": 7, "content": "The phase shift is the horizontal shift of the sine function. From the graph, we observe that the sine function starts at its minimum value at \\( x = -\\frac{\\pi}{3} \\)."}
+{"problem_id": 17, "step_index": 8, "content": "The standard sine function \\( y = \\sin x \\) starts at its minimum value at \\( x = -\\frac{\\pi}{2} \\). Therefore, the phase shift \\( -\\frac{c}{b} \\) is:\n   \\[\n   -\\frac{c}{3} = -\\frac{\\pi}{3} \\implies c = \\pi\n   \\]"}
+{"problem_id": 17, "step_index": 9, "content": "Thus, the smallest possible value of \\( c \\) is \\( \\boxed{\\pi} \\)."}
+{"problem_id": 18, "step_index": 0, "content": "To solve for \\( x \\) in the given geometric configuration, we need to analyze the properties of the shapes and the angles involved."}
+{"problem_id": 18, "step_index": 1, "content": "So, \\( \\overline{BC} \\) is parallel to the segment through \\( A \\)."}
+{"problem_id": 18, "step_index": 2, "content": "Therefore, \\( AB = BC \\), so \\( \\triangle ABC \\) is isosceles with \\( AB = BC \\)."}
+{"problem_id": 18, "step_index": 3, "content": "The angle at \\( A \\) is given as \\( 124^\\circ \\)."}
+{"problem_id": 18, "step_index": 4, "content": "We need to find the measure of \\( x \\), which is the angle at \\( B \\)."}
+{"problem_id": 18, "step_index": 5, "content": "In an isosceles triangle, the base angles are equal. Therefore, \\( \\angle B = \\angle C \\)."}
+{"problem_id": 18, "step_index": 6, "content": "The sum of the interior angles in any triangle is \\( 180^\\circ \\)."}
+{"problem_id": 18, "step_index": 7, "content": "Let \\( \\angle B = \\angle C = x \\)."}
+{"problem_id": 18, "step_index": 8, "content": "The sum of the angles in \\( \\triangle ABC \\) is:\n \\[\n \\angle A + \\angle B + \\angle C = 180^\\circ\n \\]"}
+{"problem_id": 18, "step_index": 9, "content": "Substitute the known values:\n \\[\n 124^\\circ + x + x = 180^\\circ\n \\]"}
+{"problem_id": 18, "step_index": 10, "content": "Simplify the equation:\n \\[\n 124^\\circ + 2x = 180^\\circ\n \\]"}
+{"problem_id": 18, "step_index": 11, "content": "Subtract \\( 124^\\circ \\) from both sides:\n \\[\n 2x = 180^\\circ - 124^\\circ\n \\]"}
+{"problem_id": 18, "step_index": 12, "content": "Therefore, \\( 2x = 56^\\circ \\)."}
+{"problem_id": 18, "step_index": 13, "content": "Divide both sides by 2:\n \\[\n x = \\frac{56^\\circ}{2}\n \\]"}
+{"problem_id": 18, "step_index": 14, "content": "So, \\( x = 28^\\circ \\)."}
+{"problem_id": 18, "step_index": 15, "content": "Therefore, the number of degrees represented by \\( x \\) is \\(\\boxed{28}\\)."}
+{"problem_id": 19, "step_index": 0, "content": "To find the smallest possible value of \\(a\\) such that all the roots of the polynomial \\(x^3 + ax^2 + ax + 1 = 0\\) are real, we start by analyzing the polynomial."}
+{"problem_id": 19, "step_index": 1, "content": "Notice that the polynomial can be factored as follows:\n\n\\[x^3 + ax^2 + ax + 1 = (x+1)(x^2 + (a-1)x + 1).\\]"}
+{"problem_id": 19, "step_index": 2, "content": "This factorization is valid because when we expand \\((x+1)(x^2 + (a-1)x + 1)\\), we get:\n\n\\[x^3 + (a-1)x^2 + x + x^2 + (a-1)x + 1 = x^3 + ax^2 + ax + 1.\\]"}
+{"problem_id": 19, "step_index": 3, "content": "For all the roots of the polynomial to be real, both \\(x+1\\) and \\(x^2 + (a-1)x + 1\\) must have real roots."}
+{"problem_id": 19, "step_index": 4, "content": "The root of \\(x+1\\) is \\(x = -1\\), which is real."}
+{"problem_id": 19, "step_index": 5, "content": "Therefore, we need to ensure that the quadratic polynomial \\(x^2 + (a-1)x + 1\\) has real roots."}
+{"problem_id": 19, "step_index": 6, "content": "A quadratic polynomial \\(ax^2 + bx + c\\) has real roots if and only if its discriminant is non-negative."}
+{"problem_id": 19, "step_index": 7, "content": "The discriminant \\(\\Delta\\) of the quadratic polynomial \\(x^2 + (a-1)x + 1\\) is given by:\n\n\\[\\Delta = (a-1)^2 - 4 \\cdot 1 \\cdot 1 = (a-1)^2 - 4.\\]"}
+{"problem_id": 19, "step_index": 8, "content": "For the quadratic polynomial to have real roots, we need:\n\n\\[(a-1)^2 - 4 \\geq 0.\\]"}
+{"problem_id": 19, "step_index": 9, "content": "This inequality can be rewritten as:\n\n\\[(a-1)^2 \\geq 4.\\]"}
+{"problem_id": 19, "step_index": 10, "content": "Taking the square root of both sides, we get:\n\n\\[|a-1| \\geq 2.\\]"}
+{"problem_id": 19, "step_index": 11, "content": "This absolute value inequality gives us two cases to consider:\n\n1. \\(a-1 \\geq 2\\)\n2. \\(a-1 \\leq -2\\)"}
+{"problem_id": 19, "step_index": 12, "content": "Solving these inequalities, we get:\n\n1. \\(a \\geq 3\\)\n2. \\(a \\leq -1\\)"}
+{"problem_id": 19, "step_index": 13, "content": "Since \\(a\\) is a positive real number, we discard the second case."}
+{"problem_id": 19, "step_index": 14, "content": "Therefore, the smallest possible value of \\(a\\) is:\n\n\\[a = 3.\\]"}
+{"problem_id": 20, "step_index": 0, "content": "To evaluate the expression \\((1+2i)6-3i\\), we will follow these steps."}
+{"problem_id": 20, "step_index": 1, "content": "So, the first step is to distribute the 6 to both terms inside the parentheses."}
+{"problem_id": 20, "step_index": 2, "content": "Therefore, \\((1+2i)6 = 1 \\cdot 6 + 2i \\cdot 6 = 6 + 12i\\)."}
+{"problem_id": 20, "step_index": 3, "content": "Next, we substitute this result back into the original expression."}
+{"problem_id": 20, "step_index": 4, "content": "So, the expression becomes \\(6 + 12i - 3i\\)."}
+{"problem_id": 20, "step_index": 5, "content": "Now, we combine the like terms (the imaginary parts)."}
+{"problem_id": 20, "step_index": 6, "content": "Therefore, \\(6 + (12i - 3i) = 6 + 9i\\)."}
+{"problem_id": 20, "step_index": 7, "content": "So, the final answer is \\(\\boxed{6 + 9i}\\)."}
+{"problem_id": 21, "step_index": 0, "content": "To find the greatest integer less than \\((\\sqrt{7} + \\sqrt{5})^6\\), we start by considering the expression \\((\\sqrt{7} + \\sqrt{5})^6 + (\\sqrt{7} - \\sqrt{5})^6\\). This expression is an integer because the terms involving \\(\\sqrt{7}\\) and \\(\\sqrt{5}\\) will cancel out when expanded and added together."}
+{"problem_id": 21, "step_index": 1, "content": "First, let's expand \\((\\sqrt{7} + \\sqrt{5})^6\\) and \\((\\sqrt{7} - \\sqrt{5})^6\\) using the binomial theorem:\n\\[\n(\\sqrt{7} + \\sqrt{5})^6 = \\sum_{k=0}^{6} \\binom{6}{k} (\\sqrt{7})^{6-k} (\\sqrt{5})^k\n\\]\n\\[\n(\\sqrt{7} - \\sqrt{5})^6 = \\sum_{k=0}^{6} \\binom{6}{k} (\\sqrt{7})^{6-k} (-\\sqrt{5})^k\n\\]"}
+{"problem_id": 21, "step_index": 2, "content": "When we add these two expressions, the terms with odd \\(k\\) will cancel out, leaving only the terms with even \\(k\\):\n\\[\n(\\sqrt{7} + \\sqrt{5})^6 + (\\sqrt{7} - \\sqrt{5})^6 = 2 \\left( \\binom{6}{0} (\\sqrt{7})^6 + \\binom{6}{2} (\\sqrt{7})^4 (\\sqrt{5})^2 + \\binom{6}{4} (\\sqrt{7})^2 (\\sqrt{5})^4 + \\binom{6}{6} (\\sqrt{5})^6 \\right)\n\\]"}
+{"problem_id": 21, "step_index": 3, "content": "Now, let's calculate each term:\n\\[\n\\binom{6}{0} (\\sqrt{7})^6 = 1 \\cdot 7^3 = 343\n\\]"}
+{"problem_id": 21, "step_index": 4, "content": "\\[\n\\binom{6}{2} (\\sqrt{7})^4 (\\sqrt{5})^2 = 15 \\cdot 49 \\cdot 5 = 3675\n\\]"}
+{"problem_id": 21, "step_index": 5, "content": "\\[\n\\binom{6}{4} (\\sqrt{7})^2 (\\sqrt{5})^4 = 15 \\cdot 7 \\cdot 25 = 2625\n\\]"}
+{"problem_id": 21, "step_index": 6, "content": "\\[\n\\binom{6}{6} (\\sqrt{5})^6 = 1 \\cdot 5^3 = 125\n\\]"}
+{"problem_id": 21, "step_index": 7, "content": "Adding these terms together, we get:\n\\[\n2 \\left( 343 + 3675 + 2625 + 125 \\right) = 2 \\cdot 6768 = 13536\n\\]"}
+{"problem_id": 21, "step_index": 8, "content": "Therefore, \\((\\sqrt{7} + \\sqrt{5})^6 + (\\sqrt{7} - \\sqrt{5})^6 = 13536\\)."}
+{"problem_id": 21, "step_index": 9, "content": "Next, we need to find the value of \\((\\sqrt{7} - \\sqrt{5})^6\\). Since \\(\\sqrt{7} - \\sqrt{5}\\) is a small positive number, \\((\\sqrt{7} - \\sqrt{5})^6\\) is a very small positive number, much less than 1."}
+{"problem_id": 21, "step_index": 10, "content": "So, \\((\\sqrt{7} + \\sqrt{5})^6\\) must be slightly less than 13536."}
+{"problem_id": 21, "step_index": 11, "content": "Therefore, the greatest integer less than \\((\\sqrt{7} + \\sqrt{5})^6\\) is 13535."}
+{"problem_id": 22, "step_index": 0, "content": "To solve for \\( x \\), we need to set up an equation based on the given conditions. Let's denote the pay per dog as \\( p \\)."}
+{"problem_id": 22, "step_index": 1, "content": "First, let's calculate Denali's and Nate's initial pay:\n- Denali's initial pay: \\( 16p \\)\n- Nate's initial pay: \\( 12p \\)"}
+{"problem_id": 22, "step_index": 2, "content": "According to the problem, there are two scenarios to consider:\n1. Denali starts walking \\( 4x \\) more dogs and Nate stays at 12 dogs.\n2. \\( x \\) of Nate's dogs are reassigned to Denali."}
+{"problem_id": 22, "step_index": 3, "content": "In Scenario 1, Denali's new total number of dogs is \\( 16 + 4x \\)."}
+{"problem_id": 22, "step_index": 4, "content": "Denali's new pay in Scenario 1 is \\( (16 + 4x)p \\)."}
+{"problem_id": 22, "step_index": 5, "content": "Nate's pay remains the same in Scenario 1, which is \\( 12p \\)."}
+{"problem_id": 22, "step_index": 6, "content": "In Scenario 2, Denali's new total number of dogs is \\( 16 + x \\)."}
+{"problem_id": 22, "step_index": 7, "content": "Nate's new total number of dogs in Scenario 2 is \\( 12 - x \\)."}
+{"problem_id": 22, "step_index": 8, "content": "Denali's new pay in Scenario 2 is \\( (16 + x)p \\)."}
+{"problem_id": 22, "step_index": 9, "content": "Nate's new pay in Scenario 2 is \\( (12 - x)p \\)."}
+{"problem_id": 22, "step_index": 10, "content": "According to the problem, the ratio of Denali's pay to Nate's pay is the same in both scenarios. Therefore, we set up the following equation:\n\\[\n\\frac{(16 + 4x)p}{12p} = \\frac{(16 + x)p}{(12 - x)p}\n\\]"}
+{"problem_id": 22, "step_index": 11, "content": "We can cancel \\( p \\) from both sides of the equation:\n\\[\n\\frac{16 + 4x}{12} = \\frac{16 + x}{12 - x}\n\\]"}
+{"problem_id": 22, "step_index": 12, "content": "Next, we cross-multiply to eliminate the fractions:\n\\[\n(16 + 4x)(12 - x) = 12(16 + x)\n\\]"}
+{"problem_id": 22, "step_index": 13, "content": "Expand both sides:\n\\[\n192 + 48x - 16x - 4x^2 = 192 + 12x\n\\]"}
+{"problem_id": 22, "step_index": 14, "content": "Simplify the left side:\n\\[\n192 + 32x - 4x^2 = 192 + 12x\n\\]"}
+{"problem_id": 22, "step_index": 15, "content": "Subtract 192 from both sides:\n\\[\n32x - 4x^2 = 12x\n\\]"}
+{"problem_id": 22, "step_index": 16, "content": "Move all terms to one side of the equation:\n\\[\n-4x^2 + 32x - 12x = 0\n\\]"}
+{"problem_id": 22, "step_index": 17, "content": "Combine like terms:\n\\[\n-4x^2 + 20x = 0\n\\]"}
+{"problem_id": 22, "step_index": 18, "content": "Factor out \\( -4x \\):\n\\[\n-4x(x - 5) = 0\n\\]"}
+{"problem_id": 22, "step_index": 19, "content": "Set each factor equal to zero:\n\\[\n-4x = 0 \\quad \\text{or} \\quad x - 5 = 0\n\\]"}
+{"problem_id": 22, "step_index": 20, "content": "Therefore, we have:\n\\[\nx = 0 \\quad \\text{or} \\quad x = 5\n\\]"}
+{"problem_id": 22, "step_index": 21, "content": "Since \\( x = 0 \\) does not make sense in the context of the problem, the solution is:\n\\[\nx = 5\n\\]"}
+{"problem_id": 23, "step_index": 0, "content": "To solve the equation \\( x = \\sqrt{11-2x} + 4 \\), we will follow a step-by-step approach."}
+{"problem_id": 23, "step_index": 1, "content": "So, we start by isolating the square root term:  \\( x - 4 = \\sqrt{11-2x} \\)."}
+{"problem_id": 23, "step_index": 2, "content": "Next, we square both sides to eliminate the square root:  \\( (x - 4)^2 = (\\sqrt{11-2x})^2 \\)."}
+{"problem_id": 23, "step_index": 3, "content": "Simplifying both sides, we get:  \\( x^2 - 8x + 16 = 11 - 2x \\)."}
+{"problem_id": 23, "step_index": 4, "content": "Then, we move all terms to one side to form a quadratic equation:  \\( x^2 - 8x + 16 - 11 + 2x = 0 \\)."}
+{"problem_id": 23, "step_index": 5, "content": "Simplifying further, we have:  \\( x^2 - 6x + 5 = 0 \\)."}
+{"problem_id": 23, "step_index": 6, "content": "Next, we factor the quadratic equation:  \\( (x - 1)(x - 5) = 0 \\)."}
+{"problem_id": 23, "step_index": 7, "content": "So, we solve for \\( x \\):  \\( x - 1 = 0 \\) or \\( x - 5 = 0 \\)."}
+{"problem_id": 23, "step_index": 8, "content": "Thus, the solutions are:  \\( x = 1 \\) or \\( x = 5 \\)."}
+{"problem_id": 23, "step_index": 9, "content": "Therefore, we verify the solutions by substituting them back into the original equation."}
+{"problem_id": 23, "step_index": 10, "content": "For \\( x = 1 \\):"}
+{"problem_id": 23, "step_index": 11, "content": "Substituting \\( x = 1 \\) into the original equation:  \\( 1 = \\sqrt{11 - 2(1)} + 4 \\)."}
+{"problem_id": 23, "step_index": 12, "content": "Simplifying inside the square root:  \\( 1 = \\sqrt{11 - 2} + 4 \\)."}
+{"problem_id": 23, "step_index": 13, "content": "Further simplification gives:  \\( 1 = \\sqrt{9} + 4 \\)."}
+{"problem_id": 23, "step_index": 14, "content": "So, we have:  \\( 1 = 3 + 4 \\)."}
+{"problem_id": 23, "step_index": 15, "content": "This simplifies to:  \\( 1 \\neq 7 \\)."}
+{"problem_id": 23, "step_index": 16, "content": "Therefore, \\( x = 1 \\) is not a solution."}
+{"problem_id": 23, "step_index": 17, "content": "For \\( x = 5 \\):"}
+{"problem_id": 23, "step_index": 18, "content": "Substituting \\( x = 5 \\) into the original equation:  \\( 5 = \\sqrt{11 - 2(5)} + 4 \\)."}
+{"problem_id": 23, "step_index": 19, "content": "Simplifying inside the square root:  \\( 5 = \\sqrt{11 - 10} + 4 \\)."}
+{"problem_id": 23, "step_index": 20, "content": "Further simplification gives:  \\( 5 = \\sqrt{1} + 4 \\)."}
+{"problem_id": 23, "step_index": 21, "content": "So, we have:  \\( 5 = 1 + 4 \\)."}
+{"problem_id": 23, "step_index": 22, "content": "This simplifies to:  \\( 5 = 5 \\)."}
+{"problem_id": 23, "step_index": 23, "content": "Therefore, \\( x = 5 \\) is a solution."}
+{"problem_id": 24, "step_index": 0, "content": "To determine the minimal compound interest rate that the savings account must provide, we need to calculate the future value of the worker's deposits over three years, taking into account the interest earned."}
+{"problem_id": 24, "step_index": 1, "content": "Let's denote the annual interest rate by \\( r \\). The worker makes three deposits of \\$20,000 at the end of each year. The first deposit will earn interest for two years, the second deposit will earn interest for one year, and the third deposit will not earn any interest."}
+{"problem_id": 24, "step_index": 2, "content": "The future value of the first deposit after two years is:  \\( 20000 \\times (1 + r)^2 \\)"}
+{"problem_id": 24, "step_index": 3, "content": "The future value of the second deposit after one year is:  \\( 20000 \\times (1 + r) \\)"}
+{"problem_id": 24, "step_index": 4, "content": "The future value of the third deposit is:  \\( 20000 \\)"}
+{"problem_id": 24, "step_index": 5, "content": "The total future value of all three deposits is:  \\( 20000 \\times (1 + r)^2 + 20000 \\times (1 + r) + 20000 \\)"}
+{"problem_id": 24, "step_index": 6, "content": "We know that this total future value must be at least \\$66,200. Therefore, we can set up the following inequality:  \\( 20000 \\times (1 + r)^2 + 20000 \\times (1 + r) + 20000 \\geq 66200 \\)"}
+{"problem_id": 24, "step_index": 7, "content": "We can factor out the common factor of 20000 from the left side of the inequality:  \\( 20000 \\left( (1 + r)^2 + (1 + r) + 1 \\right) \\geq 66200 \\)"}
+{"problem_id": 24, "step_index": 8, "content": "Next, we divide both sides of the inequality by 20000:  \\( (1 + r)^2 + (1 + r) + 1 \\geq \\frac{66200}{20000} \\)"}
+{"problem_id": 24, "step_index": 9, "content": "So, the simplified inequality is:  \\( (1 + r)^2 + (1 + r) + 1 \\geq 3.31 \\)"}
+{"problem_id": 24, "step_index": 10, "content": "Let \\( x = 1 + r \\). Then the inequality becomes:  \\( x^2 + x + 1 \\geq 3.31 \\)"}
+{"problem_id": 24, "step_index": 11, "content": "Subtract 3.31 from both sides to set the inequality to zero:  \\( x^2 + x + 1 - 3.31 \\geq 0 \\)"}
+{"problem_id": 24, "step_index": 12, "content": "Therefore, the inequality is now:  \\( x^2 + x - 2.31 \\geq 0 \\)"}
+{"problem_id": 25, "step_index": 0, "content": "To solve the functional equation \\( f(x) + f(y) = f(x + y) - xy - 1 \\) given that \\( f(1) = 1 \\), we will follow a systematic approach to determine the form of \\( f(x) \\) and then find all integers \\( n \\) such that \\( f(n) = n \\)."}
+{"problem_id": 25, "step_index": 1, "content": "First, let's substitute \\( y = 0 \\) into the functional equation:\n\\[\nf(x) + f(0) = f(x + 0) - x \\cdot 0 - 1\n\\]"}
+{"problem_id": 25, "step_index": 2, "content": "This simplifies to:\n\\[\nf(x) + f(0) = f(x) - 1\n\\]"}
+{"problem_id": 25, "step_index": 3, "content": "Subtracting \\( f(x) \\) from both sides, we get:\n\\[\nf(0) = -1\n\\]"}
+{"problem_id": 25, "step_index": 4, "content": "Next, let's substitute \\( y = 1 \\) into the functional equation:\n\\[\nf(x) + f(1) = f(x + 1) - x \\cdot 1 - 1\n\\]"}
+{"problem_id": 25, "step_index": 5, "content": "Given \\( f(1) = 1 \\), this becomes:\n\\[\nf(x) + 1 = f(x + 1) - x - 1\n\\]"}
+{"problem_id": 25, "step_index": 6, "content": "Adding \\( x + 1 \\) to both sides, we get:\n\\[\nf(x) + x + 2 = f(x + 1)\n\\]"}
+{"problem_id": 25, "step_index": 7, "content": "Thus, we have:\n\\[\nf(x + 1) = f(x) + x + 2\n\\]"}
+{"problem_id": 25, "step_index": 8, "content": "This recurrence relation allows us to express \\( f(n) \\) for any integer \\( n \\) in terms of \\( f(0) \\). We start with \\( f(0) = -1 \\) and use the recurrence relation iteratively:\n\\[\nf(1) = f(0) + 0 + 2 = -1 + 2 = 1\n\\]"}
+{"problem_id": 25, "step_index": 9, "content": "\\[\nf(2) = f(1) + 1 + 2 = 1 + 1 + 2 = 4\n\\]"}
+{"problem_id": 25, "step_index": 10, "content": "\\[\nf(3) = f(2) + 2 + 2 = 4 + 2 + 2 = 8\n\\]"}
+{"problem_id": 25, "step_index": 11, "content": "\\[\nf(4) = f(3) + 3 + 2 = 8 + 3 + 2 = 13\n\\]"}
+{"problem_id": 25, "step_index": 12, "content": "We observe a pattern. To find a general formula for \\( f(n) \\), we sum the recurrence relation from \\( n = 0 \\) to \\( n = k \\):\n\\[\nf(k + 1) = f(k) + k + 2\n\\]"}
+{"problem_id": 25, "step_index": 13, "content": "Let's write down the first few terms of the recurrence:\n\\[\nf(1) = f(0) + 0 + 2 = -1 + 2 = 1\n\\]\n\\[\nf(2) = f(1) + 1 + 2 = 1 + 1 + 2 = 4\n\\]\n\\[\nf(3) = f(2) + 2 + 2 = 4 + 2 + 2 = 8\n\\]\n\\[\nf(4) = f(3) + 3 + 2 = 8 + 3 + 2 = 13\n\\]"}
+{"problem_id": 25, "step_index": 14, "content": "We can express \\( f(n) \\) in a general form by summing the recurrence relation:\n\\[\nf(n) = f(0) + \\sum_{k=0}^{n-1} (k + 2)\n\\]"}
+{"problem_id": 25, "step_index": 15, "content": "The sum of the series \\( \\sum_{k=0}^{n-1} (k + 2) \\) can be broken down:\n\\[\n\\sum_{k=0}^{n-1} (k + 2) = \\sum_{k=0}^{n-1} k + \\sum_{k=0}^{n-1} 2\n\\]"}
+{"problem_id": 25, "step_index": 16, "content": "The sum of the first \\( n-1 \\) integers is \\( \\frac{(n-1)n}{2} \\), and the sum of \\( 2 \\) repeated \\( n \\) times is \\( 2n \\):\n\\[\n\\sum_{k=0}^{n-1} k = \\frac{(n-1)n}{2}\n\\]\n\\[\n\\sum_{k=0}^{n-1} 2 = 2n\n\\]"}
+{"problem_id": 25, "step_index": 17, "content": "Therefore, the total sum is:\n\\[\n\\sum_{k=0}^{n-1} (k + 2) = \\frac{(n-1)n}{2} + 2n\n\\]"}
+{"problem_id": 25, "step_index": 18, "content": "Simplifying the expression:\n\\[\n\\frac{(n-1)n}{2} + 2n = \\frac{n^2 - n + 4n}{2} = \\frac{n^2 + 3n}{2}\n\\]"}
+{"problem_id": 25, "step_index": 19, "content": "Thus, the general form of \\( f(n) \\) is:\n\\[\nf(n) = f(0) + \\frac{n^2 + 3n}{2} = -1 + \\frac{n^2 + 3n}{2}\n\\]"}
+{"problem_id": 25, "step_index": 20, "content": "Simplifying further:\n\\[\nf(n) = \\frac{n^2 + 3n - 2}{2}\n\\]"}
+{"problem_id": 25, "step_index": 21, "content": "Now, we need to find all integers \\( n \\) such that \\( f(n) = n \\). We set up the equation:\n\\[\n\\frac{n^2 + 3n - 2}{2} = n\n\\]"}
+{"problem_id": 25, "step_index": 22, "content": "Multiplying both sides by 2 to clear the fraction:\n\\[\nn^2 + 3n - 2 = 2n\n\\]"}
+{"problem_id": 25, "step_index": 23, "content": "Rearranging the equation:\n\\[\nn^2 + 3n - 2n - 2 = 0\n\\]\n\\[\nn^2 + n - 2 = 0\n\\]"}
+{"problem_id": 25, "step_index": 24, "content": "Factoring the quadratic equation:\n\\[\n(n + 2)(n - 1) = 0\n\\]"}
+{"problem_id": 25, "step_index": 25, "content": "Therefore, the solutions are:\n\\[\nn = -2 \\quad \\text{or} \\quad n = 1\n\\]"}
+{"problem_id": 26, "step_index": 0, "content": "To determine the number of ways \\(7\\) people can sit around a round table such that no two of Pierre, Rosa, and Thomas sit next to each other, we can follow these steps:"}
+{"problem_id": 26, "step_index": 1, "content": "For \\(n\\) people sitting around a round table, the number of distinct arrangements is \\((n-1)!\\). Here, \\(n = 7\\), so the total number of unrestricted seating arrangements is:"}
+{"problem_id": 26, "step_index": 2, "content": "\\((7-1)! = 6! = 720\\)"}
+{"problem_id": 26, "step_index": 3, "content": "We use the principle of inclusion-exclusion to find the number of arrangements where at least two of Pierre, Rosa, and Thomas are sitting next to each other."}
+{"problem_id": 26, "step_index": 4, "content": "Treat Pierre and Rosa as a single \"block\". This reduces the problem to arranging 6 \"blocks\" (the Pierre-Rosa block and the other 5 people) around a round table, which can be done in \\((6-1)! = 5! = 120\\) ways. Within the block, Pierre and Rosa can switch places, so there are \\(2\\) ways to arrange Pierre and Rosa within their block. Therefore, the number of arrangements where Pierre and Rosa are next to each other is:"}
+{"problem_id": 26, "step_index": 5, "content": "\\(5! \\times 2 = 120 \\times 2 = 240\\)"}
+{"problem_id": 26, "step_index": 6, "content": "Since there are 3 pairs of people (Pierre and Rosa, Rosa and Thomas, Thomas and Pierre), the total number of arrangements where at least two specific pairs are sitting next to each other is:"}
+{"problem_id": 26, "step_index": 7, "content": "\\(3 \\times 240 = 720\\)"}
+{"problem_id": 26, "step_index": 8, "content": "Treat Pierre, Rosa, and Thomas as a single \"block\". This reduces the problem to arranging 5 \"blocks\" (the Pierre-Rosa-Thomas block and the other 4 people) around a round table, which can be done in \\((5-1)! = 4! = 24\\) ways. Within the block, Pierre, Rosa, and Thomas can be arranged in \\(3!\\) ways. Therefore, the number of arrangements where Pierre, Rosa, and Thomas are all sitting next to each other is:"}
+{"problem_id": 26, "step_index": 9, "content": "\\(4! \\times 3! = 24 \\times 6 = 144\\)"}
+{"problem_id": 26, "step_index": 10, "content": "Using the principle of inclusion-exclusion, the number of arrangements where at least two of Pierre, Rosa, and Thomas are sitting next to each other is:"}
+{"problem_id": 26, "step_index": 11, "content": "\\(720 - 144 = 576\\)"}
+{"problem_id": 26, "step_index": 12, "content": "Therefore, the number of ways \\(7\\) people can sit around a round table such that no two of Pierre, Rosa, and Thomas sit next to each other is:"}
+{"problem_id": 26, "step_index": 13, "content": "\\(720 - 576 = 144\\)"}
+{"problem_id": 27, "step_index": 0, "content": "To determine the profit the math club made from their bake sale, we need to calculate the total revenue from selling the cookies, cupcakes, and brownies, and then subtract the cost of baking these items."}
+{"problem_id": 27, "step_index": 1, "content": "First, let's calculate the revenue from the cookies. The club sold 54 cookies at a rate of three cookies for $1. Therefore, the number of sets of three cookies sold is: \n\\[\n\\frac{54}{3} = 18\n\\]"}
+{"problem_id": 27, "step_index": 2, "content": "Since each set of three cookies sells for $1, the total revenue from the cookies is:\n\\[\n18 \\times 1 = 18\n\\]"}
+{"problem_id": 27, "step_index": 3, "content": "Next, let's calculate the revenue from the cupcakes. The club sold 20 cupcakes at $2 each. Therefore, the total revenue from the cupcakes is:\n\\[\n20 \\times 2 = 40\n\\]"}
+{"problem_id": 27, "step_index": 4, "content": "Then, let's calculate the revenue from the brownies. The club sold 35 brownies at $1 each. Therefore, the total revenue from the brownies is:\n\\[\n35 \\times 1 = 35\n\\]"}
+{"problem_id": 27, "step_index": 5, "content": "Now, we add up the revenues from all the items to find the total revenue:\n\\[\n18 + 40 + 35 = 93\n\\]"}
+{"problem_id": 27, "step_index": 6, "content": "Finally, we subtract the cost of baking the items from the total revenue to find the profit:\n\\[\n93 - 15 = 78\n\\]"}
+{"problem_id": 27, "step_index": 7, "content": "Thus, the profit the math club made is:\n\\[\n\\boxed{78}\n\\]"}
+{"problem_id": 28, "step_index": 0, "content": "To determine the result of a \\(90^\\circ\\) counter-clockwise rotation around the origin for the complex number \\(7 + 2i\\), we can use the properties of complex numbers and their representation in the complex plane."}
+{"problem_id": 28, "step_index": 1, "content": "A \\(90^\\circ\\) counter-clockwise rotation in the complex plane is equivalent to multiplying the complex number by \\(i\\). This is because multiplying by \\(i\\) effectively rotates a complex number by \\(90^\\circ\\) in the counter-clockwise direction."}
+{"problem_id": 28, "step_index": 2, "content": "Let's start with the given complex number:  \\( z = 7 + 2i \\)."}
+{"problem_id": 28, "step_index": 3, "content": "We need to multiply \\(z\\) by \\(i\\):  \\( z \\cdot i = (7 + 2i) \\cdot i \\)."}
+{"problem_id": 28, "step_index": 4, "content": "Using the distributive property of multiplication over addition, we get:  \\( (7 + 2i) \\cdot i = 7i + 2i^2 \\)."}
+{"problem_id": 28, "step_index": 5, "content": "Recall that \\(i^2 = -1\\). Substituting this value in, we have:  \\( 7i + 2(-1) = 7i - 2 \\)."}
+{"problem_id": 28, "step_index": 6, "content": "Combining the real and imaginary parts, we get:  \\( -2 + 7i \\)."}
+{"problem_id": 28, "step_index": 7, "content": "Therefore, the resulting complex number after a \\(90^\\circ\\) counter-clockwise rotation around the origin is:  \\(\\boxed{-2 + 7i}\\)."}
+{"problem_id": 29, "step_index": 0, "content": "To determine the number of different battalions that can be sent to the battle of Thermopylae, we need to calculate the number of ways to choose 4 upper class soldiers out of 5 and 8 lower class soldiers out of 10."}
+{"problem_id": 29, "step_index": 1, "content": "This involves using combinations, which are denoted as \\( \\binom{n}{r} \\) and represent the number of ways to choose \\( r \\) elements from a set of \\( n \\) elements without regard to the order of selection."}
+{"problem_id": 29, "step_index": 2, "content": "First, we calculate the number of ways to choose 4 upper class soldiers out of 5: \\[ \\binom{5}{4} = \\frac{5!}{4!(5-4)!} = \\frac{5!}{4! \\cdot 1!} = \\frac{5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1}{4 \\cdot 3 \\cdot 2 \\cdot 1 \\cdot 1} = 5 \\]"}
+{"problem_id": 29, "step_index": 3, "content": "Next, we calculate the number of ways to choose 8 lower class soldiers out of 10: \\[ \\binom{10}{8} = \\frac{10!}{8!(10-8)!} = \\frac{10!}{8! \\cdot 2!} = \\frac{10 \\cdot 9 \\cdot 8 \\cdot 7 \\cdot 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1}{8 \\cdot 7 \\cdot 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 \\cdot 2 \\cdot 1} = \\frac{10 \\cdot 9}{2 \\cdot 1} = 45 \\]"}
+{"problem_id": 29, "step_index": 4, "content": "To find the total number of different battalions that can be sent, we multiply the number of ways to choose the upper class soldiers by the number of ways to choose the lower class soldiers: \\[ \\binom{5}{4} \\times \\binom{10}{8} = 5 \\times 45 = 225 \\]"}
+{"problem_id": 29, "step_index": 5, "content": "Therefore, the number of different battalions that can be sent is \\(\\boxed{225}\\)."}
+{"problem_id": 30, "step_index": 0, "content": "To find the product of \\(6_8 \\cdot 7_8\\) and express the answer in base \\(8\\), we can follow these steps:"}
+{"problem_id": 30, "step_index": 1, "content": "Convert the base \\(8\\) numbers to base \\(10\\)."}
+{"problem_id": 30, "step_index": 2, "content": "The base \\(8\\) number \\(6_8\\) can be converted to base \\(10\\) as follows:"}
+{"problem_id": 30, "step_index": 3, "content": "6_8 = 6_{10}"}
+{"problem_id": 30, "step_index": 4, "content": "The base \\(8\\) number \\(7_8\\) can be converted to base \\(10\\) as follows:"}
+{"problem_id": 30, "step_index": 5, "content": "7_8 = 7_{10}"}
+{"problem_id": 30, "step_index": 6, "content": "Perform the multiplication in base \\(10\\)."}
+{"problem_id": 30, "step_index": 7, "content": "Now, we multiply the base \\(10\\) equivalents:"}
+{"problem_id": 30, "step_index": 8, "content": "6_{10} \\cdot 7_{10} = 42_{10}"}
+{"problem_id": 30, "step_index": 9, "content": "Convert the result back to base \\(8\\)."}
+{"problem_id": 30, "step_index": 10, "content": "To convert \\(42_{10}\\) to base \\(8\\), we divide \\(42\\) by \\(8\\) and keep track of the remainders:"}
+{"problem_id": 30, "step_index": 11, "content": "42 \\div 8 = 5 \\text{ remainder } 2"}
+{"problem_id": 30, "step_index": 12, "content": "This means that \\(42_{10} = 52_8\\)."}
+{"problem_id": 30, "step_index": 13, "content": "Therefore, the product of \\(6_8 \\cdot 7_8\\) expressed in base \\(8\\) is \\(\\boxed{52_8}\\)."}
+{"problem_id": 31, "step_index": 0, "content": "To simplify \\(\\sqrt{242}\\), we start by finding the prime factorization of 242."}
+{"problem_id": 31, "step_index": 1, "content": "We can see that 242 is an even number, so it is divisible by 2."}
+{"problem_id": 31, "step_index": 2, "content": "So, \\(242 \\div 2 = 121\\)."}
+{"problem_id": 31, "step_index": 3, "content": "Therefore, we can write: \\(242 = 2 \\times 121\\)."}
+{"problem_id": 31, "step_index": 4, "content": "Next, we need to factorize 121."}
+{"problem_id": 31, "step_index": 5, "content": "We know that 121 is a perfect square, and it is equal to \\(11 \\times 11\\)."}
+{"problem_id": 31, "step_index": 6, "content": "Therefore, \\(121 = 11 \\times 11\\)."}
+{"problem_id": 31, "step_index": 7, "content": "Therefore, the prime factorization of 242 is: \\(242 = 2 \\times 11 \\times 11\\)."}
+{"problem_id": 31, "step_index": 8, "content": "Now, we can use the property of square roots that states \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\)."}
+{"problem_id": 31, "step_index": 9, "content": "Applying this property, we get: \\(\\sqrt{242} = \\sqrt{2 \\times 11 \\times 11} = \\sqrt{2} \\times \\sqrt{11 \\times 11}\\)."}
+{"problem_id": 31, "step_index": 10, "content": "Since \\(\\sqrt{11 \\times 11} = 11\\), we have: \\(\\sqrt{242} = \\sqrt{2} \\times 11 = 11\\sqrt{2}\\)."}
+{"problem_id": 31, "step_index": 11, "content": "Thus, the simplified form of \\(\\sqrt{242}\\) is: \\(\\boxed{11\\sqrt{2}}\\)."}
+{"problem_id": 32, "step_index": 0, "content": "To determine the number of ways 8 people can sit around a round table such that Pierre, Rosa, and Thomas all want to sit together, we can follow these steps."}
+{"problem_id": 32, "step_index": 1, "content": "Treat Pierre, Rosa, and Thomas as a single unit. Since Pierre, Rosa, and Thomas want to sit together, we can consider them as a single \"block\" or \"unit\". This reduces the problem to seating 6 units (the block and the other 5 people) around a round table."}
+{"problem_id": 32, "step_index": 2, "content": "Arrange the 6 units around the table. The number of ways to arrange \\( n \\) units around a round table is \\((n-1)!\\). Here, \\( n = 6 \\), so the number of ways to arrange the 6 units is \\((6-1)! = 5! = 120\\)."}
+{"problem_id": 32, "step_index": 3, "content": "Arrange Pierre, Rosa, and Thomas within their unit. Within the block, Pierre, Rosa, and Thomas can be arranged in \\(3!\\) ways. This is because there are 3 people and the number of permutations of 3 people is \\(3! = 6\\)."}
+{"problem_id": 32, "step_index": 4, "content": "Combine the two results. The total number of ways to arrange the 8 people around the table such that Pierre, Rosa, and Thomas sit together is the product of the number of ways to arrange the 6 units and the number of ways to arrange Pierre, Rosa, and Thomas within their unit. Therefore, the total number of ways is \\(120 \\times 6 = 720\\)."}
+{"problem_id": 32, "step_index": 5, "content": "Thus, the number of ways 8 people can sit around a round table if Pierre, Rosa, and Thomas all want to sit together is \\(\\boxed{720}\\)."}
+{"problem_id": 33, "step_index": 0, "content": "To find the eighth term of the geometric sequence \\(\\frac{125}{9}, \\frac{25}{3}, 5, 3, \\ldots\\), we first need to determine the common ratio \\(r\\)."}
+{"problem_id": 33, "step_index": 1, "content": "The common ratio \\(r\\) is found by dividing any term by the preceding term. Let's use the second term divided by the first term:"}
+{"problem_id": 33, "step_index": 2, "content": "So, \\(r = \\frac{\\frac{25}{3}}{\\frac{125}{9}} = \\frac{25}{3} \\times \\frac{9}{125} = \\frac{25 \\times 9}{3 \\times 125} = \\frac{225}{375} = \\frac{3}{5}\\)."}
+{"problem_id": 33, "step_index": 3, "content": "We can verify that this common ratio holds for the other terms in the sequence. For example, dividing the third term by the second term:"}
+{"problem_id": 33, "step_index": 4, "content": "So, \\(r = \\frac{5}{\\frac{25}{3}} = 5 \\times \\frac{3}{25} = \\frac{15}{25} = \\frac{3}{5}\\)."}
+{"problem_id": 33, "step_index": 5, "content": "Since the common ratio is consistent, we can use the formula for the \\(n\\)-th term of a geometric sequence, which is given by:"}
+{"problem_id": 33, "step_index": 6, "content": "So, \\(a_n = a_1 \\cdot r^{n-1}\\)."}
+{"problem_id": 33, "step_index": 7, "content": "For our sequence, \\(a_1 = \\frac{125}{9}\\), \\(r = \\frac{3}{5}\\), and we need to find the eighth term (\\(a_8\\)):"}
+{"problem_id": 33, "step_index": 8, "content": "So, \\(a_8 = \\frac{125}{9} \\cdot \\left(\\frac{3}{5}\\right)^{8-1} = \\frac{125}{9} \\cdot \\left(\\frac{3}{5}\\right)^7\\)."}
+{"problem_id": 33, "step_index": 9, "content": "Next, we calculate \\(\\left(\\frac{3}{5}\\right)^7\\):"}
+{"problem_id": 33, "step_index": 10, "content": "So, \\(\\left(\\frac{3}{5}\\right)^7 = \\frac{3^7}{5^7} = \\frac{2187}{78125}\\)."}
+{"problem_id": 33, "step_index": 11, "content": "Now, we multiply \\(\\frac{125}{9}\\) by \\(\\frac{2187}{78125}\\):"}
+{"problem_id": 33, "step_index": 12, "content": "So, \\(\\frac{125}{9} \\cdot \\frac{2187}{78125} = \\frac{125 \\times 2187}{9 \\times 78125} = \\frac{273375}{703125}\\)."}
+{"problem_id": 33, "step_index": 13, "content": "Simplifying the fraction:"}
+{"problem_id": 33, "step_index": 14, "content": "So, \\(\\frac{273375}{703125} = \\frac{27}{625}\\)."}
+{"problem_id": 33, "step_index": 15, "content": "Therefore, the eighth term of the geometric sequence is \\(\\frac{27}{625}\\)."}
+{"problem_id": 34, "step_index": 0, "content": "To find the constant term in the expansion of \\(\\left(10x^3 - \\frac{1}{2x^2}\\right)^5\\), we use the Binomial Theorem."}
+{"problem_id": 34, "step_index": 1, "content": "The Binomial Theorem states that:\n\n\\[\n(a + b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k\n\\]"}
+{"problem_id": 34, "step_index": 2, "content": "In this problem, \\(a = 10x^3\\), \\(b = -\\frac{1}{2x^2}\\), and \\(n = 5\\)."}
+{"problem_id": 34, "step_index": 3, "content": "We need to find the term in the expansion where the power of \\(x\\) is zero (the constant term)."}
+{"problem_id": 34, "step_index": 4, "content": "The general term in the expansion is given by:\n\n\\[\nT_k = \\binom{5}{k} (10x^3)^{5-k} \\left(-\\frac{1}{2x^2}\\right)^k\n\\]"}
+{"problem_id": 34, "step_index": 5, "content": "First, simplify the expression inside the binomial coefficient:\n\n\\[\n(10x^3)^{5-k} = 10^{5-k} x^{3(5-k)} = 10^{5-k} x^{15-3k}\n\\]"}
+{"problem_id": 34, "step_index": 6, "content": "Simplify the second expression inside the binomial coefficient:\n\n\\[\n\\left(-\\frac{1}{2x^2}\\right)^k = (-1)^k \\left(\\frac{1}{2}\\right)^k x^{-2k} = (-1)^k \\cdot 2^{-k} \\cdot x^{-2k}\n\\]"}
+{"problem_id": 34, "step_index": 7, "content": "Combine these results to get the general term:\n\n\\[\nT_k = \\binom{5}{k} \\cdot 10^{5-k} \\cdot x^{15-3k} \\cdot (-1)^k \\cdot 2^{-k} \\cdot x^{-2k}\n\\]"}
+{"problem_id": 34, "step_index": 8, "content": "Combine the powers of \\(x\\):\n\n\\[\nT_k = \\binom{5}{k} \\cdot 10^{5-k} \\cdot (-1)^k \\cdot 2^{-k} \\cdot x^{15-3k-2k} = \\binom{5}{k} \\cdot 10^{5-k} \\cdot (-1)^k \\cdot 2^{-k} \\cdot x^{15-5k}\n\\]"}
+{"problem_id": 34, "step_index": 9, "content": "For \\(T_k\\) to be a constant term, the exponent of \\(x\\) must be zero:\n\n\\[\n15 - 5k = 0\n\\]"}
+{"problem_id": 35, "step_index": 0, "content": "Given that \\( n \\equiv 2 \\pmod{7} \\), we need to find the remainder when \\((n + 2)(n + 4)(n + 6)\\) is divided by 7."}
+{"problem_id": 35, "step_index": 1, "content": "We start by substituting \\( n = 2 \\) into the expression:\n\n\\[\n(n + 2)(n + 4)(n + 6) \\equiv (2 + 2)(2 + 4)(2 + 6) \\pmod{7}\n\\]"}
+{"problem_id": 35, "step_index": 2, "content": "Simplifying the terms inside the parentheses, we get:\n\n\\[\n(2 + 2)(2 + 4)(2 + 6) = 4 \\cdot 6 \\cdot 8\n\\]"}
+{"problem_id": 35, "step_index": 3, "content": "Next, we need to find the remainder when \\( 4 \\cdot 6 \\cdot 8 \\) is divided by 7."}
+{"problem_id": 35, "step_index": 4, "content": "We can simplify this step by step. First, we find the remainder when 8 is divided by 7:\n\n\\[\n8 \\equiv 1 \\pmod{7}\n\\]"}
+{"problem_id": 35, "step_index": 5, "content": "So, we can replace 8 with 1 in the expression:\n\n\\[\n4 \\cdot 6 \\cdot 8 \\equiv 4 \\cdot 6 \\cdot 1 \\pmod{7}\n\\]"}
+{"problem_id": 35, "step_index": 6, "content": "This simplifies to:\n\n\\[\n4 \\cdot 6 \\equiv 24 \\pmod{7}\n\\]"}
+{"problem_id": 35, "step_index": 7, "content": "Now, we need to find the remainder when 24 is divided by 7. We do this by performing the division:\n\n\\[\n24 \\div 7 = 3 \\text{ remainder } 3\n\\]"}
+{"problem_id": 35, "step_index": 8, "content": "So, we have:\n\n\\[\n24 \\equiv 3 \\pmod{7}\n\\]"}
+{"problem_id": 35, "step_index": 9, "content": "Therefore, the remainder when \\((n + 2)(n + 4)(n + 6)\\) is divided by 7 is:\n\n\\[\n\\boxed{3}\n\\]"}
+{"problem_id": 36, "step_index": 0, "content": "To solve the equation \\((x - 3)^3 + (x - 7)^3 = (2x - 10)^3\\), we start by letting \\(a = x - 3\\) and \\(b = x - 7\\)."}
+{"problem_id": 36, "step_index": 1, "content": "Then the equation becomes \\(a^3 + b^3 = (a + b)^3\\)."}
+{"problem_id": 36, "step_index": 2, "content": "We know from algebra that \\(a^3 + b^3 = (a + b)^3 - 3ab(a + b)\\)."}
+{"problem_id": 36, "step_index": 3, "content": "Therefore, we can rewrite the equation as: \\(a^3 + b^3 = (a + b)^3 - 3ab(a + b) = (a + b)^3\\)."}
+{"problem_id": 36, "step_index": 4, "content": "This simplifies to: \\(-3ab(a + b) = 0\\)."}
+{"problem_id": 36, "step_index": 5, "content": "So, we have three possible solutions: \\(a = 0\\), \\(b = 0\\), or \\(a + b = 0\\)."}
+{"problem_id": 36, "step_index": 6, "content": "If \\(a = 0\\), then \\(x - 3 = 0\\), so \\(x = 3\\)."}
+{"problem_id": 36, "step_index": 7, "content": "If \\(b = 0\\), then \\(x - 7 = 0\\), so \\(x = 7\\)."}
+{"problem_id": 36, "step_index": 8, "content": "If \\(a + b = 0\\), then \\((x - 3) + (x - 7) = 0\\), so \\(2x - 10 = 0\\), and thus \\(x = 5\\)."}
+{"problem_id": 36, "step_index": 9, "content": "Therefore, the roots of the equation are \\(x = 3\\), \\(x = 5\\), and \\(x = 7\\)."}
+{"problem_id": 36, "step_index": 10, "content": "The final answer is: \\(\\boxed{3, 5, 7}\\)"}
+{"problem_id": 37, "step_index": 0, "content": "To determine the minimum number of degrees a regular pentagon must be rotated counterclockwise about its center until it coincides with its original position, we need to consider the symmetry of the pentagon."}
+{"problem_id": 37, "step_index": 1, "content": "A regular pentagon has rotational symmetry, meaning it looks the same after being rotated by certain angles around its center."}
+{"problem_id": 37, "step_index": 2, "content": "The order of rotational symmetry for a regular pentagon is 5. This means that the pentagon can be rotated to 5 different positions and still look the same."}
+{"problem_id": 37, "step_index": 3, "content": "The angle of rotation for each symmetry position is given by dividing 360 degrees (a full rotation) by the order of symmetry."}
+{"problem_id": 37, "step_index": 4, "content": "So, we calculate: \\[ \\frac{360^\\circ}{5} = 72^\\circ \\]"}
+{"problem_id": 37, "step_index": 5, "content": "Therefore, the minimum number of degrees the pentagon must be rotated until it coincides with its original position is \\(\\boxed{72}\\)."}
+{"problem_id": 38, "step_index": 0, "content": "To determine the total daily caloric requirement for a person, we start by noting that a snack-size tin of peaches contains 40 calories and this amount represents 2% of the person's daily caloric requirement."}
+{"problem_id": 38, "step_index": 1, "content": "Let's denote the total daily caloric requirement by \\( C \\)."}
+{"problem_id": 38, "step_index": 2, "content": "According to the problem, 2% of \\( C \\) is equal to 40 calories. This relationship can be expressed as: \\( 0.02C = 40 \\)."}
+{"problem_id": 38, "step_index": 3, "content": "To find \\( C \\), we need to solve for \\( C \\) by isolating it on one side of the equation. We do this by dividing both sides of the equation by 0.02."}
+{"problem_id": 38, "step_index": 4, "content": "Next, we perform the division: \\( C = \\frac{40}{0.02} = \\frac{40}{\\frac{2}{100}} = 40 \\times \\frac{100}{2} = 40 \\times 50 = 2000 \\)."}
+{"problem_id": 38, "step_index": 5, "content": "Therefore, the total daily caloric requirement for the person is \\( \\boxed{2000} \\)."}
+{"problem_id": 39, "step_index": 0, "content": "To find the result when the greatest common factor (GCF) of 6432 and 132 is increased by 11, we need to follow these steps."}
+{"problem_id": 39, "step_index": 1, "content": "For 6432, we start the prime factorization process."}
+{"problem_id": 39, "step_index": 2, "content": "6432 divided by 2 is 3216."}
+{"problem_id": 39, "step_index": 3, "content": "3216 divided by 2 is 1608."}
+{"problem_id": 39, "step_index": 4, "content": "1608 divided by 2 is 804."}
+{"problem_id": 39, "step_index": 5, "content": "804 divided by 2 is 402."}
+{"problem_id": 39, "step_index": 6, "content": "402 divided by 2 is 201."}
+{"problem_id": 39, "step_index": 7, "content": "201 divided by 3 is 67."}
+{"problem_id": 39, "step_index": 8, "content": "67 divided by 67 is 1."}
+{"problem_id": 39, "step_index": 9, "content": "So, the prime factorization of 6432 is: 6432 = 2^5 × 3 × 67."}
+{"problem_id": 39, "step_index": 10, "content": "Next, we find the prime factorization of 132."}
+{"problem_id": 39, "step_index": 11, "content": "132 divided by 2 is 66."}
+{"problem_id": 39, "step_index": 12, "content": "66 divided by 2 is 33."}
+{"problem_id": 39, "step_index": 13, "content": "33 divided by 3 is 11."}
+{"problem_id": 39, "step_index": 14, "content": "11 divided by 11 is 1."}
+{"problem_id": 39, "step_index": 15, "content": "So, the prime factorization of 132 is: 132 = 2^2 × 3 × 11."}
+{"problem_id": 39, "step_index": 16, "content": "Now, we identify the common prime factors and their lowest powers."}
+{"problem_id": 39, "step_index": 17, "content": "The common prime factors of 6432 and 132 are 2 and 3."}
+{"problem_id": 39, "step_index": 18, "content": "The lowest power of 2 in both factorizations is \\(2^2\\)."}
+{"problem_id": 39, "step_index": 19, "content": "The lowest power of 3 in both factorizations is \\(3^1\\)."}
+{"problem_id": 39, "step_index": 20, "content": "Next, we calculate the GCF."}
+{"problem_id": 39, "step_index": 21, "content": "The GCF is the product of these lowest powers: GCF = 2^2 × 3 = 4 × 3 = 12."}
+{"problem_id": 39, "step_index": 22, "content": "Finally, we increase the GCF by 11."}
+{"problem_id": 39, "step_index": 23, "content": "12 + 11 = 23."}
+{"problem_id": 39, "step_index": 24, "content": "Therefore, the result when the greatest common factor of 6432 and 132 is increased by 11 is 23."}
+{"problem_id": 40, "step_index": 0, "content": "To determine the length of each side of the regular octagon, we start by calculating the perimeter of the regular hexagon."}
+{"problem_id": 40, "step_index": 1, "content": "A regular hexagon has six equal sides, and each side is given as 16 cm."}
+{"problem_id": 40, "step_index": 2, "content": "Therefore, the perimeter of the hexagon is:  6 \\times 16 = 96 \\text{ cm}."}
+{"problem_id": 40, "step_index": 3, "content": "Since the regular octagon has the same perimeter as the hexagon, the perimeter of the octagon is also 96 cm."}
+{"problem_id": 40, "step_index": 4, "content": "A regular octagon has eight equal sides, so if we let the length of each side of the octagon be \\( s \\), then the perimeter of the octagon can be expressed as:  8s = 96."}
+{"problem_id": 40, "step_index": 5, "content": "To find the length of each side, we solve for \\( s \\) by dividing both sides of the equation by 8:  s = \\frac{96}{8} = 12 \\text{ cm}."}
+{"problem_id": 40, "step_index": 6, "content": "Thus, the length of each side of the octagon is \\(\\boxed{12}\\)."}
+{"problem_id": 41, "step_index": 0, "content": "To determine the coordinates of the fourth vertex of the parallelogram, we can use the property that the diagonals of a parallelogram bisect each other. This means that the midpoint of one diagonal is the same as the midpoint of the other diagonal."}
+{"problem_id": 41, "step_index": 1, "content": "Let's denote the vertices of the parallelogram as \\( A(5, 3) \\), \\( B(6, 8) \\), \\( C(7, 4) \\), and \\( D(x, y) \\). We need to find the coordinates of \\( D \\)."}
+{"problem_id": 41, "step_index": 2, "content": "First, we calculate the midpoint of the diagonal \\( AC \\):\n\\[\n\\text{Midpoint of } AC = \\left( \\frac{5+7}{2}, \\frac{3+4}{2} \\right) = \\left( \\frac{12}{2}, \\frac{7}{2} \\right) = (6, 3.5)\n\\]"}
+{"problem_id": 41, "step_index": 3, "content": "Next, we calculate the midpoint of the diagonal \\( BD \\):\n\\[\n\\text{Midpoint of } BD = \\left( \\frac{6+x}{2}, \\frac{8+y}{2} \\right)\n\\]"}
+{"problem_id": 41, "step_index": 4, "content": "Since the diagonals bisect each other, the midpoints must be equal:\n\\[\n\\left( \\frac{6+x}{2}, \\frac{8+y}{2} \\right) = (6, 3.5)\n\\]"}
+{"problem_id": 41, "step_index": 5, "content": "This gives us two equations:\n\\[\n\\frac{6+x}{2} = 6 \\quad \\text{and} \\quad \\frac{8+y}{2} = 3.5\n\\]"}
+{"problem_id": 41, "step_index": 6, "content": "Solving the first equation:\n\\[\n\\frac{6+x}{2} = 6 \\implies 6+x = 12 \\implies x = 6\n\\]"}
+{"problem_id": 41, "step_index": 7, "content": "Solving the second equation:\n\\[\n\\frac{8+y}{2} = 3.5 \\implies 8+y = 7 \\implies y = -1\n\\]"}
+{"problem_id": 41, "step_index": 8, "content": "However, we are given that \\( x > 7 \\). Therefore, \\( x = 6 \\) and \\( y = -1 \\) cannot be the correct coordinates for \\( D \\)."}
+{"problem_id": 41, "step_index": 9, "content": "Let's consider another pair of diagonals."}
+{"problem_id": 41, "step_index": 10, "content": "Let's try the diagonals \\( AB \\) and \\( CD \\):\n\\[\n\\text{Midpoint of } AB = \\left( \\frac{5+6}{2}, \\frac{3+8}{2} \\right) = \\left( \\frac{11}{2}, \\frac{11}{2} \\right) = (5.5, 5.5)\n\\]"}
+{"problem_id": 42, "step_index": 0, "content": "To solve the inequality \\(-4 < 2(x - 1) < 8\\) and express the solution in the form \\(a < x < b\\), we start with the given inequality:"}
+{"problem_id": 42, "step_index": 1, "content": "So, \\(-4 < 2(x - 1) < 8\\)."}
+{"problem_id": 42, "step_index": 2, "content": "Next, we divide all parts of the inequality by 2 to simplify:"}
+{"problem_id": 42, "step_index": 3, "content": "Therefore, \\(\\frac{-4}{2} < \\frac{2(x - 1)}{2} < \\frac{8}{2}\\)."}
+{"problem_id": 42, "step_index": 4, "content": "Simplifying each term, we get: \\(-2 < x - 1 < 4\\)."}
+{"problem_id": 42, "step_index": 5, "content": "Next, we add 1 to all parts of the inequality to isolate \\(x\\):"}
+{"problem_id": 42, "step_index": 6, "content": "Therefore, \\(-2 + 1 < x - 1 + 1 < 4 + 1\\)."}
+{"problem_id": 42, "step_index": 7, "content": "Simplifying each term, we get: \\(-1 < x < 5\\)."}
+{"problem_id": 42, "step_index": 8, "content": "Now, the inequality is in the form \\(a < x < b\\), where \\(a = -1\\) and \\(b = 5\\)."}
+{"problem_id": 42, "step_index": 9, "content": "Next, we find the value of \\(a + b\\):"}
+{"problem_id": 42, "step_index": 10, "content": "Therefore, \\(a + b = -1 + 5 = 4\\)."}
+{"problem_id": 42, "step_index": 11, "content": "Therefore, the value of \\(a + b\\) is \\(\\boxed{4}\\)."}
+{"problem_id": 43, "step_index": 0, "content": "To find the minimum value of the expression \\(\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{x^2 + y^2 - 80x - 100y + 4100}\\) for \\(0 \\le x \\le 40\\) and \\(0 \\le y \\le 50\\), we start by rewriting the expression in a more geometrically meaningful form."}
+{"problem_id": 43, "step_index": 1, "content": "Notice that \\(\\sqrt{x^2 + 400} = \\sqrt{(x-0)^2 + (y-20)^2}\\) represents the distance from \\((x,y)\\) to \\((0,20)\\)."}
+{"problem_id": 43, "step_index": 2, "content": "Also, \\(\\sqrt{y^2 + 900} = \\sqrt{(x-0)^2 + (y-30)^2}\\) represents the distance from \\((x,y)\\) to \\((0,30)\\)."}
+{"problem_id": 43, "step_index": 3, "content": "Furthermore, \\(\\sqrt{x^2 + y^2 - 80x - 100y + 4100} = \\sqrt{(x-40)^2 + (y-50)^2}\\) represents the distance from \\((x,y)\\) to \\((40,50)\\)."}
+{"problem_id": 43, "step_index": 4, "content": "Thus, the expression represents the sum of the distances from a point \\((x,y)\\) to the points \\((0,20)\\), \\((0,30)\\), and \\((40,50)\\)."}
+{"problem_id": 43, "step_index": 5, "content": "To minimize this sum, we need to find a point \\((x,y)\\) that is the Fermat point of the triangle formed by \\((0,20)\\), \\((0,30)\\), and \\((40,50)\\)."}
+{"problem_id": 43, "step_index": 6, "content": "However, since the Fermat point is not necessarily within the given range, we check the boundary points of the rectangle \\(0 \\le x \\le 40\\) and \\(0 \\le y \\le 50\\)."}
+{"problem_id": 43, "step_index": 7, "content": "First, we check the point \\((0,30)\\):"}
+{"problem_id": 43, "step_index": 8, "content": "\\(\\sqrt{0^2 + 400} + \\sqrt{30^2 + 900} + \\sqrt{0^2 + 30^2 - 80 \\cdot 0 - 100 \\cdot 30 + 4100}\\) simplifies to \\(\\sqrt{400} + \\sqrt{900} + \\sqrt{4100 - 3000 + 900}\\)."}
+{"problem_id": 43, "step_index": 9, "content": "This further simplifies to \\(20 + 30 + \\sqrt{2000}\\)."}
+{"problem_id": 43, "step_index": 10, "content": "Therefore, the value at \\((0,30)\\) is \\(50 + \\sqrt{2000}\\)."}
+{"problem_id": 43, "step_index": 11, "content": "Next, we check other boundary points to ensure this is indeed the minimum value."}
+{"problem_id": 44, "step_index": 0, "content": "To determine how many miles Bill is from his starting point after his walk, we need to analyze his movements step by step."}
+{"problem_id": 44, "step_index": 1, "content": "Bill walks \\(\\frac{1}{2}\\) mile south."}
+{"problem_id": 44, "step_index": 2, "content": "This changes his position to \\((0, -\\frac{1}{2})\\)."}
+{"problem_id": 44, "step_index": 3, "content": "Bill walks \\(\\frac{3}{4}\\) mile east."}
+{"problem_id": 44, "step_index": 4, "content": "This changes his position to \\(\\left(\\frac{3}{4}, -\\frac{1}{2}\\right)\\)."}
+{"problem_id": 44, "step_index": 5, "content": "Bill walks \\(\\frac{1}{2}\\) mile south."}
+{"problem_id": 44, "step_index": 6, "content": "This changes his position to \\(\\left(\\frac{3}{4}, -\\frac{1}{2} - \\frac{1}{2}\\right) = \\left(\\frac{3}{4}, -1\\right)\\)."}
+{"problem_id": 44, "step_index": 7, "content": "Now, we need to find the distance from Bill's final position \\(\\left(\\frac{3}{4}, -1\\right)\\) to his starting point \\((0, 0)\\)."}
+{"problem_id": 44, "step_index": 8, "content": "We use the distance formula:"}
+{"problem_id": 44, "step_index": 9, "content": "\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n\\]"}
+{"problem_id": 44, "step_index": 10, "content": "Substituting the coordinates of the starting and final points:"}
+{"problem_id": 44, "step_index": 11, "content": "\\[\nd = \\sqrt{\\left(\\frac{3}{4} - 0\\right)^2 + (-1 - 0)^2}\n\\]"}
+{"problem_id": 44, "step_index": 12, "content": "\\[\nd = \\sqrt{\\left(\\frac{3}{4}\\right)^2 + (-1)^2}\n\\]"}
+{"problem_id": 44, "step_index": 13, "content": "\\[\nd = \\sqrt{\\frac{9}{16} + 1}\n\\]"}
+{"problem_id": 44, "step_index": 14, "content": "To add the fractions, we convert 1 to a fraction with a denominator of 16:"}
+{"problem_id": 44, "step_index": 15, "content": "\\[\n1 = \\frac{16}{16}\n\\]"}
+{"problem_id": 44, "step_index": 16, "content": "\\[\nd = \\sqrt{\\frac{9}{16} + \\frac{16}{16}}\n\\]"}
+{"problem_id": 44, "step_index": 17, "content": "\\[\nd = \\sqrt{\\frac{25}{16}}\n\\]"}
+{"problem_id": 44, "step_index": 18, "content": "Taking the square root of the fraction:"}
+{"problem_id": 44, "step_index": 19, "content": "\\[\nd = \\frac{\\sqrt{25}}{\\sqrt{16}} = \\frac{5}{4}\n\\]"}
+{"problem_id": 44, "step_index": 20, "content": "Converting \\(\\frac{5}{4}\\) to a decimal:"}
+{"problem_id": 44, "step_index": 21, "content": "\\[\n\\frac{5}{4} = 1.25\n\\]"}
+{"problem_id": 44, "step_index": 22, "content": "Thus, Bill is 1.25 miles from his starting point."}
+{"problem_id": 45, "step_index": 0, "content": "Given a right triangle \\(ABC\\) with \\(\\angle B = 90^\\circ\\), we know that \\(\\sin A = 2\\cos A\\). We need to find \\(\\tan A\\)."}
+{"problem_id": 45, "step_index": 1, "content": "First, recall the definition of the tangent function:\n\\[\n\\tan A = \\frac{\\sin A}{\\cos A}\n\\]"}
+{"problem_id": 45, "step_index": 2, "content": "We are given:\n\\[\n\\sin A = 2\\cos A\n\\]"}
+{"problem_id": 45, "step_index": 3, "content": "Substitute \\(\\sin A\\) in the tangent formula:\n\\[\n\\tan A = \\frac{2\\cos A}{\\cos A}\n\\]"}
+{"problem_id": 45, "step_index": 4, "content": "Simplify the expression by canceling \\(\\cos A\\) in the numerator and the denominator:\n\\[\n\\tan A = 2\n\\]"}
+{"problem_id": 45, "step_index": 5, "content": "Thus, the value of \\(\\tan A\\) is:\n\\[\n\\boxed{2}\n\\]"}
+{"problem_id": 46, "step_index": 0, "content": "To find the smallest positive integer \\( n \\) such that all the roots of the polynomial \\( z^4 + z^2 + 1 = 0 \\) are \\( n \\)-th roots of unity, we start by solving the equation."}
+{"problem_id": 46, "step_index": 1, "content": "Notice that the polynomial can be rewritten using a substitution. Let \\( w = z^2 \\)."}
+{"problem_id": 46, "step_index": 2, "content": "Then the equation becomes: \\( w^2 + w + 1 = 0 \\)."}
+{"problem_id": 46, "step_index": 3, "content": "This is a quadratic equation in \\( w \\). We can solve it using the quadratic formula \\( w = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\), where \\( a = 1 \\), \\( b = 1 \\), and \\( c = 1 \\)."}
+{"problem_id": 46, "step_index": 4, "content": "So, the solutions for \\( w \\) are: \\( w = \\frac{-1 \\pm \\sqrt{1^2 - 4 \\cdot 1 \\cdot 1}}{2 \\cdot 1} = \\frac{-1 \\pm \\sqrt{1 - 4}}{2} = \\frac{-1 \\pm \\sqrt{-3}}{2} = \\frac{-1 \\pm i\\sqrt{3}}{2} \\)."}
+{"problem_id": 46, "step_index": 5, "content": "Therefore, the solutions for \\( w \\) are: \\( w = \\frac{-1 + i\\sqrt{3}}{2} \\) and \\( w = \\frac{-1 - i\\sqrt{3}}{2} \\)."}
+{"problem_id": 46, "step_index": 6, "content": "Recall that \\( w = z^2 \\), so we have: \\( z^2 = \\frac{-1 + i\\sqrt{3}}{2} \\) and \\( z^2 = \\frac{-1 - i\\sqrt{3}}{2} \\)."}
+{"problem_id": 46, "step_index": 7, "content": "The numbers \\( \\frac{-1 + i\\sqrt{3}}{2} \\) and \\( \\frac{-1 - i\\sqrt{3}}{2} \\) are the non-real cube roots of unity, which can be written in exponential form as \\( e^{2\\pi i / 3} \\) and \\( e^{-2\\pi i / 3} \\), respectively."}
+{"problem_id": 46, "step_index": 8, "content": "Therefore, we have: \\( z^2 = e^{2\\pi i / 3} \\) and \\( z^2 = e^{-2\\pi i / 3} \\)."}
+{"problem_id": 46, "step_index": 9, "content": "Taking the square root of both sides, we get: \\( z = e^{\\pi i / 3} \\) and \\( z = e^{-\\pi i / 3} \\)."}
+{"problem_id": 46, "step_index": 10, "content": "Additionally, taking the negative square roots, we have: \\( z = e^{4\\pi i / 3} \\) and \\( z = e^{5\\pi i / 3} \\)."}
+{"problem_id": 46, "step_index": 11, "content": "These roots are the 6th roots of unity, because each \\( z \\) can be expressed as \\( e^{2k\\pi i / 6} \\) for \\( k = 1, 2, 4, 5 \\)."}
+{"problem_id": 46, "step_index": 12, "content": "Therefore, the smallest positive integer \\( n \\) such that all the roots of the polynomial \\( z^4 + z^2 + 1 = 0 \\) are \\( n \\)-th roots of unity is \\( n = 6 \\)."}
+{"problem_id": 47, "step_index": 0, "content": "To determine the vertical and horizontal asymptotes of the function \\( f(x) = \\frac{2x}{x^2-5x-14} \\), we start by analyzing the denominator and the behavior of the function as \\( x \\) approaches infinity."}
+{"problem_id": 47, "step_index": 1, "content": "First, we find the vertical asymptotes by setting the denominator equal to zero and solving for \\( x \\):\n\\[ x^2 - 5x - 14 = 0. \\]"}
+{"problem_id": 47, "step_index": 2, "content": "This quadratic equation can be factored as:\n\\[ (x-7)(x+2) = 0. \\]"}
+{"problem_id": 47, "step_index": 3, "content": "So, the solutions are:\n\\[ x = 7 \\quad \\text{and} \\quad x = -2. \\]"}
+{"problem_id": 47, "step_index": 4, "content": "Therefore, the vertical asymptotes are \\( x = 7 \\) and \\( x = -2 \\). This means \\( a = 7 \\) and \\( b = -2 \\)."}
+{"problem_id": 47, "step_index": 5, "content": "Next, we find the horizontal asymptote by examining the behavior of \\( f(x) \\) as \\( x \\) approaches infinity. We do this by dividing the numerator and the denominator by the highest power of \\( x \\) in the denominator, which is \\( x^2 \\):\n\\[ f(x) = \\frac{2x}{x^2-5x-14} = \\frac{\\frac{2x}{x^2}}{\\frac{x^2}{x^2} - \\frac{5x}{x^2} - \\frac{14}{x^2}} = \\frac{\\frac{2}{x}}{1 - \\frac{5}{x} - \\frac{14}{x^2}}. \\]"}
+{"problem_id": 47, "step_index": 6, "content": "As \\( x \\) approaches infinity, the terms \\( \\frac{2}{x} \\), \\( \\frac{5}{x} \\), and \\( \\frac{14}{x^2} \\) all approach 0. Therefore, the function approaches:\n\\[ \\frac{0}{1 - 0 - 0} = 0. \\]"}
+{"problem_id": 47, "step_index": 7, "content": "So, the horizontal asymptote is \\( y = 0 \\). This means \\( c = 0 \\)."}
+{"problem_id": 47, "step_index": 8, "content": "Finally, we find \\( a + b + c \\):\n\\[ a + b + c = 7 + (-2) + 0 = 5. \\]"}
+{"problem_id": 47, "step_index": 9, "content": "Thus, the answer is:\n\\[ \\boxed{5}. \\]"}
+{"problem_id": 48, "step_index": 0, "content": "To determine what power of 4 is equal to 8, we start by expressing 8 as a power of 2 and 4 as a power of 2. We know that 4 can be written as: 4 = 2^2."}
+{"problem_id": 48, "step_index": 1, "content": "We also know that 8 can be written as: 8 = 2^3."}
+{"problem_id": 48, "step_index": 2, "content": "We need to find a power of 4 that equals 8. Let's express 8 as a power of 4."}
+{"problem_id": 48, "step_index": 3, "content": "Since 4 = 2^2, we can rewrite 8 as: 8 = (2^2)^(3/2)."}
+{"problem_id": 48, "step_index": 4, "content": "However, a simpler approach is to express 8 directly in terms of 4. We know that: 8 = 2^3 = (2^2)^(3/2) = 4^(3/2)."}
+{"problem_id": 48, "step_index": 5, "content": "Thus, the power of 4 that equals 8 is: \\boxed{\\frac{3}{2}}."}
+{"problem_id": 49, "step_index": 0, "content": "To solve the equation where half the value of \\(3x-9\\) is equal to \\(x+37\\), we start by setting up the equation: \\(\\frac{1}{2}(3x-9) = x+37\\)."}
+{"problem_id": 49, "step_index": 1, "content": "Next, we eliminate the fraction by multiplying both sides of the equation by 2: \\(2 \\cdot \\frac{1}{2}(3x-9) = 2 \\cdot (x+37)\\)."}
+{"problem_id": 49, "step_index": 2, "content": "This simplifies to: \\(3x-9 = 2x+74\\)."}
+{"problem_id": 49, "step_index": 3, "content": "Now, we need to isolate \\(x\\). We do this by subtracting \\(2x\\) from both sides of the equation: \\(3x - 2x - 9 = 2x - 2x + 74\\)."}
+{"problem_id": 49, "step_index": 4, "content": "This simplifies to: \\(x - 9 = 74\\)."}
+{"problem_id": 49, "step_index": 5, "content": "Next, we add 9 to both sides of the equation to solve for \\(x\\): \\(x - 9 + 9 = 74 + 9\\)."}
+{"problem_id": 49, "step_index": 6, "content": "This simplifies to: \\(x = 83\\)."}
+{"problem_id": 49, "step_index": 7, "content": "Therefore, the value of \\(x\\) is \\(\\boxed{83}\\)."}
