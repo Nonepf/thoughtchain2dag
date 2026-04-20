@@ -27,20 +27,14 @@ def call_llm_segment(text):
     Text to rewrite:
     {text}
     """
-    
-    try:
-        response = client.chat.completions.create(
-            model="Qwen/Qwen2.5-72B-Instruct",
-            messages=[{"role": "user", "content": prompt}],
-        )
-        content = response.choices[0].message.content.strip() # type: ignore
-        steps = re.split(r'\[STEP\]', content)
-        steps = [s.strip() for s in steps if s.strip()]
-        return steps
-    
-    except Exception as e:
-        print(f"Error: {e}")
-        return [text]
+    response = client.chat.completions.create(
+        model="Qwen/Qwen2.5-72B-Instruct",
+        messages=[{"role": "user", "content": prompt}],
+    )
+    content = response.choices[0].message.content.strip() # type: ignore
+    steps = re.split(r'\[STEP\]', content)
+    steps = [s.strip() for s in steps if s.strip()]
+    return steps
 
 def main():
     print(f"reading: {INPUT_FILE} ...")
