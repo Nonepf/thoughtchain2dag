@@ -1,12 +1,12 @@
 """
-Step 1+2: 从 HuggingFace 下载 Math500，调用 SiliconFlow 上的
-Qwen2.5-Math-7B-Instruct 逐题生成推理文本，保存为 JSONL。
+Step 1+2: Download Math500 from HuggingFace, call SiliconFlow's
+Qwen2.5-Math-7B-Instruct to generate reasoning text for each problem, save as JSONL.
 
-依赖：
+Dependencies:
     pip install datasets openai tqdm
-用法：
+Usage:
     export SILICONFLOW_API_KEY="your_key"
-    python step1_run_math500.py
+    python run_math500.py
 """
 
 import os
@@ -16,26 +16,25 @@ from tqdm import tqdm
 from datasets import load_dataset
 from openai import OpenAI
 
-# ── 配置 ─────────────────────────────────────────────────────────────────────
+# Configuration
 API_KEY      = os.environ.get("SILICONFLOW_API_KEY", "YOUR_API_KEY")
 BASE_URL     = "https://api.siliconflow.cn/v1"
 MODEL        = "Qwen/Qwen2.5-Math-7B-Instruct"
 OUTPUT_FILE  = "qwen_ans_raw.jsonl"
-MAX_SAMPLES  = None   # None 表示跑全量 500 题；调试时可设为 10
+MAX_SAMPLES  = None   # None for full 500 problems; set to 10 for debugging
 RETRY_LIMIT  = 3
-RETRY_DELAY  = 5      # 秒
+RETRY_DELAY  = 5      # seconds
 
 SYSTEM_PROMPT = (
     "You are a helpful math assistant. "
     "Think step by step and show your full reasoning before giving the final answer."
 )
 
-# ── 客户端 ───────────────────────────────────────────────────────────────────
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 
 def call_model(problem: str) -> str:
-    """调用模型，带简单重试逻辑。"""
+    """Call model with simple retry logic."""
     for attempt in range(RETRY_LIMIT):
         try:
             response = client.chat.completions.create(
@@ -51,7 +50,7 @@ def call_model(problem: str) -> str:
         except Exception as e:
             print(f"  [Retry {attempt+1}/{RETRY_LIMIT}] Error: {e}")
             time.sleep(RETRY_DELAY)
-    return ""   # 全部重试失败则返回空串
+    return ""
 
 
 def main():
@@ -78,8 +77,8 @@ def main():
             if sample_id in done_ids:
                 continue
 
-            problem = sample.get("problem", sample.get("question", "")) # type: ignore
-            answer  = sample.get("solution", sample.get("answer", "")) # type: ignore
+            problem = sample.get("problem", sample.get("question", ""))
+            answer  = sample.get("solution", sample.get("answer", ""))
 
             model_output = call_model(problem)
 
